@@ -124,3 +124,58 @@ alpha_meritocracia <- psych::alpha(varelsoc19 %>%
 
 alpha_meritocracia$total #El ítem c18_13 fue excluido del índice de meritocracia debido a su correlación negativa con el resto de la escala, evidenciada mediante el alfa de Cronbach.
 ```
+
+paparapapapap
+
+```{r}
+
+#creacion indices continuos (promedios) #
+
+varelsoc19 <- varelsoc19 %>%
+  mutate(
+    sexismo_b = rowMeans(
+      select(., g01_01, g01_02),
+      na.rm = TRUE
+    ),
+
+    sexismo_h = rowMeans(
+      select(., g01_03, g01_04, g01_05),
+      na.rm = TRUE
+    ),
+
+    sdo_d = rowMeans(
+      select(., c18_01, c18_12),
+      na.rm = TRUE
+    ),
+
+    sdo_e = rowMeans(
+      select(., c18_02_inv, c18_03_inv),
+      na.rm = TRUE
+    ),
+
+    meritocracia = rowMeans(
+      select(., c18_09, c18_10),
+      na.rm = TRUE
+    )
+  )
+
+summary(varelsoc19 %>% 
+  select(sexismo_b, sexismo_h, sdo_d, sdo_e, meritocracia))
+```
+
+```         
+```
+
+en promedio, la muestra muestra niveles relativamente altos de sexismo benevolente (median 4)
+
+as actitudes hostiles hacia las mujeres son más moderadas que las benevolentes (median 3)
+
+en promedio, la muestra tiende a rechazar jerarquías grupales explícitas ( median 2.50)
+
+la muestra muestra baja oposición a la igualdad (median 2)
+
+apoyo moderado a la idea de que el esfuerzo/inteligencia son recompensados ( median 2.50)
+
+```{r}
+
+```
