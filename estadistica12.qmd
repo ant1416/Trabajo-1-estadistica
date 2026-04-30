@@ -6,6 +6,8 @@ editor: visual
 
 # posible pregunta: ¿ existe relacion entre actitudes sexistas y la legitimacion de la desigualdad social en chile?
 
+o: ¿En qué medida las actitudes sexistas se asocian con mayores niveles de orientación a la dominancia social y creencias meritocráticas?
+
 # variables de sexismo
 
 ### sexismo benevolente: 
@@ -59,4 +61,6 @@ View(elsoc19)
 
 varelsoc19 <- elsoc19 %>% select(g01_01, g01_02, g01_03, g01_04, g01_05,c18_01,c18_12, c18_02, c18_03, c18_09, c18_10, c18_13)
 
+
+varelsoc19[varelsoc19 == -888 | varelsoc19 == -999] <- NA
 ```
