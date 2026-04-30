@@ -4,9 +4,15 @@ format: html
 editor: visual
 ---
 
-etanrtgngrn
+percepción de justicia social y sexismo. preguntarnos si existe asociacion negativa o positiva entre las personas sexista y su percepción de justicia social (entendiendo la justicia social en 3 dimensiones separadas (desigualdad, jerarquía y mérito) y eso cruzarlo con las tendencias sexistas como una variable dicotómica (sexista 1, igualitario 0) o con género, la verdad quisieramos su input en el tema 
 
 ```{r}
-install.packages("pacman")
 
+library(tidyverse)
+library(psych)
+library(haven)
+
+data <- read_sav(
+  "ELSOC_Long_2016_2023.RData" 
+)
 ```
