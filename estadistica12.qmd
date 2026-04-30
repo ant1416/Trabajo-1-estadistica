@@ -56,7 +56,7 @@ library(haven)
 library(readxl)
 
 elsoc19 <- read_sav("ELSOC_W04_v2.01.sav")
-View(elsoc19)
+
 
 
 varelsoc19 <- elsoc19 %>% select(g01_01, g01_02, g01_03, g01_04, g01_05,c18_01,c18_12, c18_02, c18_03, c18_09, c18_10, c18_13)
