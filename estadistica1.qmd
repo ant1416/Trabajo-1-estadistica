@@ -1,0 +1,7 @@
+---
+title: "trabajo estadistica 1"
+format: html
+editor: visual
+---
+
+etanrtgngrn
