@@ -6,7 +6,7 @@ format:
 editor: visual
 ---
 
-# posible pregunta: ¿ existe relacion entre actitudes sexistas y la legitimacion de la desigualdad social en chile?
+# Sexismo benevolente y legitimación de la desigualdad
 
 **Introducción**
 
@@ -18,9 +18,11 @@ A su vez, estas formas de desigualdad pueden ser comprendidas en el marco de la 
 
 En este sentido, tanto la teoría del sexismo ambivalente como la teoría de la dominancia social permiten comprender cómo ciertas formas de prejuicio, especialmente aquellas de carácter benevolente, pueden contribuir a la legitimación de jerarquías de género. Sin embargo, en contextos donde se promueven ideales de igualdad, la persistencia de estas prácticas plantea una posible tensión entre principios normativos y formas cotidianas de interacción social. 
 
+En este sentido, estas dinámicas estructurales pueden expresarse a nivel individual a través de actitudes y percepciones que contribuyen a la reproducción simbólica de dichas jerarquías.
+
 A partir de ello, la investigación se orienta a responder la siguiente pregunta: 
 
-**¿Qué tensiones emergen entre los ideales valóricos de igualdad de género en la sociedad contemporánea y la persistencia del sexismo benevolente en la vida cotidiana, y en qué medida este contribuye a la reproducción de la desigualdad de género?**
+**¿En qué medida el sexismo benevolente se asocia con percepciones de justicia social y con la legitimación de la desigualdad de género?**
 
 Centrar el análisis en el sexismo benevolente responde a su particular capacidad de operar de manera no conflictiva y socialmente aceptada. A diferencia del sexismo hostil, que se manifiesta mediante actitudes abiertamente negativas, el sexismo benevolente se expresa a través de formas aparentemente positivas, como la protección, la caballerosidad o la idealización de la mujer, lo que dificulta su identificación como una forma de desigualdad. Esta característica lo convierte en una dimensión especialmente relevante de análisis, ya que permite observar cómo la subordinación de género puede reproducirse sin generar rechazo explícito, sosteniéndose a través de normas culturales ampliamente legitimadas. En este sentido, su estudio ofrece una vía para captar manifestaciones más sutiles del sexismo que no serían detectadas mediante aproximaciones centradas únicamente en actitudes hostiles (Glick & Fiske, 1996).
 
@@ -32,7 +34,7 @@ En segundo lugar, resulta pertinente analizar su relación con las percepciones 
 
 **H2: El sexismo benevolente se asociará positivamente con la orientación a la dominancia social, la legitimación de la desigualdad y las creencias meritocráticas, y negativamente con el igualitarismo y la crítica a la desigualdad.**
 
-El objetivo general de esta investigación es analizar la relación entre el sexismo benevolente y las percepciones de justicia social, así como su variación según características sociodemográficas, con el fin de comprender su rol en la legitimación de la desigualdad de género.
+El objetivo general de esta investigación es analizar la relación entre el sexismo benevolente y las percepciones de justicia social, así como su variación según características sociodemográficas, en relación con la legitimación de la desigualdad de género.
 
 # variables de sexismo
 
