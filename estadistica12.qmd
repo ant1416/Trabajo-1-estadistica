@@ -63,7 +63,7 @@ elsoc19 <- read_sav("ELSOC_W04_v2.01.sav")
 
 
 
-varelsoc19 <- elsoc19 %>% select(g01_01, g01_02, g01_03, g01_04, g01_05,c18_01,c18_12, c18_02, c18_03, c18_09, c18_10, c18_13)
+varelsoc19 <- elsoc19 %>% select(r13_sexo_01, r13_edad_01, g01_01, g01_02, g01_03, g01_04, g01_05,c18_01,c18_12, c18_02, c18_03, c18_09, c18_10, c18_13)
 
 
 
@@ -176,6 +176,37 @@ la muestra muestra baja oposición a la igualdad (median 2)
 
 apoyo moderado a la idea de que el esfuerzo/inteligencia son recompensados ( median 2.50)
 
-```{r}
+## h1: los niveles de sexismo benevolente variarán según género y edad, siendo más altos en hombres y en individuos de mayor edad
 
+continuo?
+
+```{r}
+#para el genero t test, comparar si el sexismo benevolente es difenrente entre hombres y mujeres
+
+t.test(sexismo_b ~ r13_sexo_01, data = varelsoc19)
+
+# edad usaremos pearsons, para ver si la edad aumenta el sexismo benevolente
+
+cor.test(varelsoc19$sexismo_b,
+         varelsoc19$r13_edad_01)
+
+# podriamos usar anova si agrupamos edad por grupos
+```
+
+## h2: sexismo benevolente se asociará positivamente con legitimación de desigualdad y negativamente con igualitarismo
+
+```{r}
+ 
+# legitimacion de desigualdad
+
+cor.test(varelsoc19$sexismo_b,
+         varelsoc19$sdo_d)
+
+cor.test(varelsoc19$sexismo_b,
+         varelsoc19$meritocracia)
+
+#igualitariasmo
+
+cor.test(varelsoc19$sexismo_b,
+         varelsoc19$sdo_e)
 ```
