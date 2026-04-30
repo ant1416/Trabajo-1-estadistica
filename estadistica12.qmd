@@ -4,7 +4,47 @@ format: html
 editor: visual
 ---
 
-percepción de justicia social y sexismo. preguntarnos si existe asociacion negativa o positiva entre las personas sexista y su percepción de justicia social (entendiendo la justicia social en 3 dimensiones separadas (desigualdad, jerarquía y mérito) y eso cruzarlo con las tendencias sexistas como una variable dicotómica (sexista 1, igualitario 0) o con género, la verdad quisieramos su input en el tema 
+# posible pregunta: ¿ existe relacion entre actitudes sexistas y la legitimacion de la desigualdad social en chile?
+
+# variables de sexismo
+
+### sexismo benevolente: 
+
+g01_1:Las mujeres tienden a ser más refinadas y a tener un mejor gusto que los hombres
+
+g01\_ 2 : Las mujeres deberían ser queridas y protegidas por los hombres
+
+### sexismo hostil o tradicional:
+
+g01_3: En nombre de la igualdad, muchas mujeres intentan conseguir ciertos privilegios
+
+g01\_ 4: Generalmente, cuando una mujer es derrotada limpiamente se queja de haber sufrido discriminación
+
+g01_5: Cuando no hay muchos trabajos disponibles, los hombres deberían tener más derecho a un trabajo que las mujeres
+
+\
+
+## variables dominacion
+
+### dominacion grupal:
+
+### c18_01: Una sociedad ideal requiere que algunos grupos estén en una posición superior y otros
+
+c18_12: Algunos grupos de personas son simplemente inferiores a otros grupos
+
+### oposicion a la igualdad
+
+c18_02: Debiéramos trabajar para dar a todos los grupos la misma oportunidad de tener éxito
+
+c18\_ 03: Deberíamos hacer todo lo posible por igualar las condiciones de diferentes grupos
+
+### meritocracia:
+
+c18_09: En Chile las personas son recompensadas por sus esfuerzos
+
+c18_010: En Chile las personas son recompensadas por su inteligencia y habilidades
+
+c18_13: En Chile las personas tienen igualdad de oportunidades para salir adelante
 
 ```{r}
 
@@ -13,7 +53,10 @@ library(psych)
 library(haven)
 library(readxl)
 
+elsoc19 <- read_sav("ELSOC_W04_v2.01.sav")
+View(elsoc19)
 
-base2019 <- read_excel("BASE_2019_COD.xlsx")
-View(base2019)
+
+varelsoc19 <- elsoc19 %>% select(g01_01, g01_02, g01_03, g01_04, g01_05,c18_01,c18_12, c18_02, c18_03, c18_09, c18_10, c18_13)
+
 ```
