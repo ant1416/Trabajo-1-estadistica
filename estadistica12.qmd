@@ -65,6 +65,8 @@ La consistencia interna de cada escala será evaluada mediante el coeficiente Al
 | Creencias Meritocráticas (IV2)       | C18_9, C18_10                     |
 | Igualitarismo (IV3)                  | C18_2, C18_3                      |
 
+hasta aqui voy !!
+
 # variables de sexismo
 
 ### sexismo benevolente:
