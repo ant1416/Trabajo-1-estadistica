@@ -10,7 +10,7 @@ o: ¿En qué medida las actitudes sexistas se asocian con mayores niveles de ori
 
 # variables de sexismo
 
-### sexismo benevolente: 
+### sexismo benevolente:
 
 g01_1:Las mujeres tienden a ser más refinadas y a tener un mejor gusto que los hombres
 
@@ -50,6 +50,8 @@ c18_13: En Chile las personas tienen igualdad de oportunidades para salir adelan
 
 ```{r}
 
+# librerias, leer base y elegir variables #
+
 library(tidyverse)
 library(psych)
 library(haven)
@@ -62,5 +64,29 @@ elsoc19 <- read_sav("ELSOC_W04_v2.01.sav")
 varelsoc19 <- elsoc19 %>% select(g01_01, g01_02, g01_03, g01_04, g01_05,c18_01,c18_12, c18_02, c18_03, c18_09, c18_10, c18_13)
 
 
+
+```
+
+```{r}
+
+#limpieza casos perdidos, inversion y construccion de indices #
+
 varelsoc19[varelsoc19 == -888 | varelsoc19 == -999] <- NA
+
+varelsoc19 <- varelsoc19 %>%
+  mutate(
+    c18_02_inv = 6 - c18_02,
+    c18_03_inv = 6 - c18_03
+  )
+
+varelsoc19 <- varelsoc19 %>%
+  mutate(
+    sexismo = rowMeans(select(., g01_01:g01_05), na.rm = TRUE),
+
+    sdo_d = rowMeans(select(., c18_01, c18_12), na.rm = TRUE),
+
+    sdo_e = rowMeans(select(., c18_02_inv, c18_03_inv), na.rm = TRUE),
+
+    meritocracia = rowMeans(select(., c18_09, c18_10, c18_13), na.rm = TRUE)
+  )
 ```
