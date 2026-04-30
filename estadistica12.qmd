@@ -11,8 +11,9 @@ percepción de justicia social y sexismo. preguntarnos si existe asociacion nega
 library(tidyverse)
 library(psych)
 library(haven)
+library(readxl)
 
-data <- read_sav(
-  "ELSOC_Long_2016_2023.RData" 
-)
+
+base2019 <- read_excel("BASE_2019_COD.xlsx")
+View(base2019)
 ```
