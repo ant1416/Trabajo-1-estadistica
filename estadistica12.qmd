@@ -48,6 +48,8 @@ c18_010: En Chile las personas son recompensadas por su inteligencia y habilidad
 
 c18_13: En Chile las personas tienen igualdad de oportunidades para salir adelante
 
+### El ítem c18_13 fue excluido del índice de meritocracia debido a su correlación negativa con el resto de la escala, evidenciada mediante el alfa de Cronbach.
+
 ```{r}
 
 # librerias, leer base y elegir variables #
@@ -69,7 +71,7 @@ varelsoc19 <- elsoc19 %>% select(g01_01, g01_02, g01_03, g01_04, g01_05,c18_01,c
 
 ```{r}
 
-#limpieza casos perdidos, inversion y construccion de indices #
+#limpieza casos perdidos, inversion #
 
 varelsoc19[varelsoc19 == -888 | varelsoc19 == -999] <- NA
 
@@ -79,14 +81,46 @@ varelsoc19 <- varelsoc19 %>%
     c18_03_inv = 6 - c18_03
   )
 
-varelsoc19 <- varelsoc19 %>%
-  mutate(
-    sexismo = rowMeans(select(., g01_01:g01_05), na.rm = TRUE),
 
-    sdo_d = rowMeans(select(., c18_01, c18_12), na.rm = TRUE),
+  
+```
 
-    sdo_e = rowMeans(select(., c18_02_inv, c18_03_inv), na.rm = TRUE),
+### Dado que la escala global de sexismo presentó baja consistencia interna (α = .58), se optó por distinguir entre sexismo benevolente y sexismo hostil, en línea con la propuesta teórica de Glick y Fiske (1996).
 
-    meritocracia = rowMeans(select(., c18_09, c18_10, c18_13), na.rm = TRUE)
-  )
+```{r}
+
+# revision de datos con alfa de cronbach #
+
+
+library(psych)
+
+
+alpha_sexismo_b <- psych::alpha(varelsoc19 %>% 
+  select(g01_01, g01_02)) #sexismo benevolente
+
+alpha_sexismo_b$total
+
+
+alpha_sexismo_h <- psych::alpha(varelsoc19 %>% 
+  select(g01_03, g01_04, g01_05)) #sexismo hostil
+
+alpha_sexismo_h$total
+
+# Las subescalas de sexismo benevolente (α = .52) y hostil (α = .53) presentaron una consistencia interna moderada, lo que puede atribuirse al reducido número de ítems y a la heterogeneidad conceptual de las afirmaciones incluidas.
+
+alpha_sdod <- psych::alpha(varelsoc19 %>% 
+  select(c18_01, c18_12)) # SDO-D
+
+alpha_sdod$total
+
+alpha_sdoe <- psych::alpha(varelsoc19 %>% 
+  select(c18_02_inv, c18_03_inv)) #SDO-E
+
+alpha_sdoe$total
+
+alpha_meritocracia <- psych::alpha(varelsoc19 %>% 
+  select(c18_09, c18_10 )) #meritocracia
+
+
+alpha_meritocracia$total #El ítem c18_13 fue excluido del índice de meritocracia debido a su correlación negativa con el resto de la escala, evidenciada mediante el alfa de Cronbach.
 ```
