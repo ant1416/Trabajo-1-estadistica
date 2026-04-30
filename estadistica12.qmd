@@ -210,3 +210,5 @@ cor.test(varelsoc19$sexismo_b,
 cor.test(varelsoc19$sexismo_b,
          varelsoc19$sdo_e)
 ```
+
+a
