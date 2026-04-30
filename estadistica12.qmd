@@ -58,6 +58,14 @@ La consistencia interna de cada escala será evaluada mediante el coeficiente Al
 
 - **Crítica a la Desigualdad (Predictor 4):** Construido a partir de la batería C18 (1 ítem, escala Likert 1–5), que evalúa la percepción de injusticia frente a las desigualdades sociales. El ítem es **invertido**, dado que su redacción expresa una crítica a la desigualdad, y se requiere alinear su dirección con el resto de los indicadores del modelo.
 
+| Variable                             | Ítems utilizados                  |
+|--------------------------------------|-----------------------------------|
+| Sexismo Benevolente (VD)             | C19_1, C19_2                      |
+| Legitimación de la Desigualdad (IV1) | C18_1, C18_4, C18_5, C18_6, C18_7 |
+| Creencias Meritocráticas (IV2)       | C18_9, C18_10                     |
+| Igualitarismo (IV3)                  | C18_2, C18_3                      |
+| Crítica a la Desigualdad (IV4)       | C18_11                            |
+
 # variables de sexismo
 
 ### sexismo benevolente:
