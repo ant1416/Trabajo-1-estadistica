@@ -22,7 +22,7 @@ En este sentido, estas dinámicas estructurales pueden expresarse a nivel indivi
 
 A partir de ello, la investigación se orienta a responder la siguiente pregunta: 
 
-**¿En qué medida el sexismo benevolente se asocia con percepciones de justicia social y con la legitimación de la desigualdad de género?**
+**¿En qué medida el sexismo benevolente se asocia con percepciones de justicia social y con la legitimación de la desigualdad social?**
 
 Centrar el análisis en el sexismo benevolente responde a su particular capacidad de operar de manera no conflictiva y socialmente aceptada. A diferencia del sexismo hostil, que se manifiesta mediante actitudes abiertamente negativas, el sexismo benevolente se expresa a través de formas aparentemente positivas, como la protección, la caballerosidad o la idealización de la mujer, lo que dificulta su identificación como una forma de desigualdad. Esta característica lo convierte en una dimensión especialmente relevante de análisis, ya que permite observar cómo la subordinación de género puede reproducirse sin generar rechazo explícito, sosteniéndose a través de normas culturales ampliamente legitimadas. En este sentido, su estudio ofrece una vía para captar manifestaciones más sutiles del sexismo que no serían detectadas mediante aproximaciones centradas únicamente en actitudes hostiles (Glick & Fiske, 1996).
 
@@ -30,15 +30,15 @@ A partir de ello, se establece como primera línea de análisis la comparación 
 
 **H1: Los niveles de sexismo benevolente tenderán a ser más elevados en hombres y en personas de mayor edad.**
 
-En segundo lugar, resulta pertinente analizar su relación con las percepciones de justicia social, en tanto estas permiten evaluar cómo los individuos interpretan y legitiman las desigualdades presentes en la estructura social. La justicia social se entiende como el conjunto de percepciones y valoraciones asociadas a la equidad, la distribución de recursos y la legitimidad de las diferencias sociales. En esta investigación, se consideran tres dimensiones analíticas: la legitimación de la desigualdad, que agrupa actitudes favorables a la jerarquía social, la meritocracia y el orden social; el igualitarismo, orientado a la reducción de las desigualdades mediante la igualdad de oportunidades; y la crítica a la desigualdad, que refiere a la percepción de injusticia frente a las diferencias sociales existentes. En este marco, se formula la siguiente hipótesis:
+En segundo lugar, resulta pertinente analizar su relación con las percepciones de justicia social, en tanto estas permiten evaluar cómo los individuos interpretan y legitiman las desigualdades presentes en la estructura social. La justicia social se entiende como el conjunto de percepciones y valoraciones asociadas a la equidad, la distribución de recursos y la legitimidad de las diferencias sociales. En esta investigación, se consideran tres dimensiones analíticas: la legitimación de la desigualdad, que agrupa actitudes favorables a la jerarquía social, la meritocracia y el orden social; el igualitarismo, orientado a la reducción de las desigualdades mediante la igualdad de oportunidades. En este marco, se formula la siguiente hipótesis:
 
-**H2: El sexismo benevolente se asociará positivamente con la legitimación de la desigualdad y las creencias meritocráticas, y negativamente con el igualitarismo y la crítica a la desigualdad.**
+**H2: El sexismo benevolente se asociará positivamente con la legitimación de la desigualdad y las creencias meritocráticas, y negativamente con el igualitarismo.**
 
-El objetivo general de esta investigación es analizar la relación entre el sexismo benevolente y las percepciones de justicia social, así como su variación según características sociodemográficas, en relación con la legitimación de la desigualdad de género.
+El objetivo general de esta investigación es analizar la relación entre el sexismo benevolente y las percepciones de justicia social, así como su variación según características sociodemográficas, en relación con la legitimación de la desigualdad social.
 
 **Metodología**
 
-El presente estudio utiliza los datos de la Encuesta Nacional de Derechos Humanos 2020, aplicada por el Instituto Nacional de Derechos Humanos (INDH) de Chile. La muestra es de carácter probabilístico y representativa de la población mayor de 14 años residente en el país, con un tamaño muestral de N=6.211casos. **(revisar datos no precisos)**
+El presente estudio utiliza datos de la primera ola del **Estudio Longitudinal Social de Chile (ELSOC 2016)**, desarrollado por el Centro de Estudios de Conflicto y Cohesión Social (COES). La población objetivo corresponde a hombres y mujeres entre 18 y 75 años residentes en zonas urbanas del país, y la muestra fue seleccionada mediante un diseño probabilístico, estratificado y multietápico. El tamaño muestral final corresponde a **N = 2927 individuos.**
 
 **Operacionalización de las variables**
 
@@ -56,7 +56,7 @@ La consistencia interna de cada escala será evaluada mediante el coeficiente Al
 
 -  **Igualitarismo (Predictor 3):** Construido a partir de la batería C18 (2 ítems, escala Likert 1–5), que mide el apoyo a la igualdad de oportunidades. Los ítems son **invertidos**, ya que están redactados en sentido igualitario, de modo que valores más altos en el índice reflejen una menor adhesión a la igualdad y mayor cercanía a posiciones favorables a la desigualdad.
 
-- **Crítica a la Desigualdad (Predictor 4):** Construido a partir de la batería C18 (1 ítem, escala Likert 1–5), que evalúa la percepción de injusticia frente a las desigualdades sociales. El ítem es **invertido**, dado que su redacción expresa una crítica a la desigualdad, y se requiere alinear su dirección con el resto de los indicadores del modelo.
+**Tabla explicativa de variables seleccionadas**
 
 | Variable                             | Ítems utilizados                  |
 |--------------------------------------|-----------------------------------|
@@ -64,7 +64,6 @@ La consistencia interna de cada escala será evaluada mediante el coeficiente Al
 | Legitimación de la Desigualdad (IV1) | C18_1, C18_4, C18_5, C18_6, C18_7 |
 | Creencias Meritocráticas (IV2)       | C18_9, C18_10                     |
 | Igualitarismo (IV3)                  | C18_2, C18_3                      |
-| Crítica a la Desigualdad (IV4)       | C18_11                            |
 
 # variables de sexismo
 
