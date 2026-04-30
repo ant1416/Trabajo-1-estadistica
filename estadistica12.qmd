@@ -26,13 +26,13 @@ Centrar el análisis en el sexismo benevolente responde a su particular capacida
 
 A partir de ello, se establece como primera línea de análisis la comparación de los niveles de sexismo benevolente según género y edad, con el objetivo de identificar posibles patrones diferenciales en su distribución. Se plantea la siguiente hipótesis 
 
-**H1: Los niveles de sexismo benevolente variarán según género y edad, siendo más altos en hombres y en individuos de mayor edad.**
+**H1: Los niveles de sexismo benevolente tenderán a ser más elevados en hombres y en personas de mayor edad.**
 
 En segundo lugar, resulta pertinente analizar su relación con las percepciones de justicia social, en tanto estas permiten evaluar cómo los individuos interpretan y legitiman las desigualdades presentes en la estructura social. La justicia social se entiende como el conjunto de percepciones y valoraciones asociadas a la equidad, la distribución de recursos y la legitimidad de las diferencias sociales. En esta investigación, se consideran tres dimensiones analíticas: la legitimación de la desigualdad, que agrupa actitudes favorables a la jerarquía social, la meritocracia y el orden social; el igualitarismo, orientado a la reducción de las desigualdades mediante la igualdad de oportunidades; y la crítica a la desigualdad, que refiere a la percepción de injusticia frente a las diferencias sociales existentes. En este marco, se formula la siguiente hipótesis:
 
-**H2: El sexismo benevolente se asociará positivamente con la legitimación de la desigualdad, y negativamente con el igualitarismo y la crítica a la desigualdad.**
+**H2: El sexismo benevolente se asociará positivamente con la orientación a la dominancia social, la legitimación de la desigualdad y las creencias meritocráticas, y negativamente con el igualitarismo y la crítica a la desigualdad.**
 
-o: ¿En qué medida las actitudes sexistas se asocian con mayores niveles de orientación a la dominancia social y creencias meritocráticas?
+El objetivo general de esta investigación es analizar la relación entre el sexismo benevolente y las percepciones de justicia social, así como su variación según características sociodemográficas, con el fin de comprender su rol en la legitimación de la desigualdad de género.
 
 # variables de sexismo
 
