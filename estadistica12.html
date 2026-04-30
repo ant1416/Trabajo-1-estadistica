@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>trabajo estadistica 1</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="estadistica12_files/libs/clipboard/clipboard.min.js"></script>
+<script src="estadistica12_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="estadistica12_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="estadistica12_files/libs/quarto-html/popper.min.js"></script>
+<script src="estadistica12_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="estadistica12_files/libs/quarto-html/anchor.min.js"></script>
+<link href="estadistica12_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="estadistica12_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="estadistica12_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="estadistica12_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="estadistica12_files/libs/bootstrap/bootstrap-efbb37e9afcc02144ebbc7afd12a776f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">trabajo estadistica 1</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="posible-pregunta-existe-relacion-entre-actitudes-sexistas-y-la-legitimacion-de-la-desigualdad-social-en-chile" class="level1">
+<h1>posible pregunta: ¿ existe relacion entre actitudes sexistas y la legitimacion de la desigualdad social en chile?</h1>
+<p><strong>Introducción</strong></p>
+<p>La presente investigación analiza el fenómeno del sexismo en la vida social, poniendo especial atención en sus formas menos evidentes, cotidianas y socialmente aceptadas. Desde esta perspectiva, resulta relevante considerar que no todas estas expresiones se manifiestan de manera explícita o conflictiva; por el contrario, muchas operan a través de prácticas, discursos y normas culturales que contribuyen a la naturalización y legitimación de las diferencias entre hombres y mujeres.</p>
+<p>Para abordar esta temática, resulta necesario delimitar conceptualmente el sexismo y sus alcances. En este sentido, el sexismo se entiende como un conjunto de actitudes, creencias y prácticas que establecen y justifican la desigualdad entre hombres y mujeres, sustentadas en la atribución de características diferenciadas según el género y en la legitimación de jerarquías sociales basadas en dichas diferencias (Glick &amp; Fiske, 1996; Pratto et al., 1994). Asimismo, puede comprenderse como un fenómeno de carácter ambivalente, en tanto integra dos dimensiones: el sexismo hostil, que se expresa mediante actitudes abiertamente negativas hacia las mujeres, y el sexismo benevolente, que consiste en evaluaciones subjetivamente positivas que, sin embargo, refuerzan su subordinación a través de la asignación de roles tradicionales. Por su parte, el prejuicio se entiende como una disposición actitudinal negativa hacia grupos sociales, vinculada a la mantención de jerarquías y desigualdades entre grupos (Pratto et al., 1994; Ho et al., 2012).</p>
+<p>A su vez, estas formas de desigualdad pueden ser comprendidas en el marco de la teoría de la dominancia social, la cual plantea que las sociedades humanas tienden a organizarse en sistemas jerárquicos basados en grupos, en los que ciertos grupos mantienen posiciones de poder y privilegio sobre otros, sustentados por ideologías y prácticas que legitiman y reproducen dichas desigualdades (Sidanius &amp; Pratto, 1999).</p>
+<p>En este sentido, tanto la teoría del sexismo ambivalente como la teoría de la dominancia social permiten comprender cómo ciertas formas de prejuicio, especialmente aquellas de carácter benevolente, pueden contribuir a la legitimación de jerarquías de género. Sin embargo, en contextos donde se promueven ideales de igualdad, la persistencia de estas prácticas plantea una posible tensión entre principios normativos y formas cotidianas de interacción social.&nbsp;</p>
+<p>A partir de ello, la investigación se orienta a responder la siguiente pregunta:&nbsp;</p>
+<p><strong>¿Qué tensiones emergen entre los ideales valóricos de igualdad de género en la sociedad contemporánea y la persistencia del sexismo benevolente en la vida cotidiana, y en qué medida este contribuye a la reproducción de la desigualdad de género?</strong></p>
+<p>Centrar el análisis en el sexismo benevolente responde a su particular capacidad de operar de manera no conflictiva y socialmente aceptada. A diferencia del sexismo hostil, que se manifiesta mediante actitudes abiertamente negativas, el sexismo benevolente se expresa a través de formas aparentemente positivas, como la protección, la caballerosidad o la idealización de la mujer, lo que dificulta su identificación como una forma de desigualdad. Esta característica lo convierte en una dimensión especialmente relevante de análisis, ya que permite observar cómo la subordinación de género puede reproducirse sin generar rechazo explícito, sosteniéndose a través de normas culturales ampliamente legitimadas. En este sentido, su estudio ofrece una vía para captar manifestaciones más sutiles del sexismo que no serían detectadas mediante aproximaciones centradas únicamente en actitudes hostiles (Glick &amp; Fiske, 1996).</p>
+<p>A partir de ello, se establece como primera línea de análisis la comparación de los niveles de sexismo benevolente según género y edad, con el objetivo de identificar posibles patrones diferenciales en su distribución. Se plantea la siguiente hipótesis&nbsp;</p>
+<p><strong>H1: Los niveles de sexismo benevolente variarán según género y edad, siendo más altos en hombres y en individuos de mayor edad.</strong></p>
+<p>En segundo lugar, resulta pertinente analizar su relación con las percepciones de justicia social, en tanto estas permiten evaluar cómo los individuos interpretan y legitiman las desigualdades presentes en la estructura social. La justicia social se entiende como el conjunto de percepciones y valoraciones asociadas a la equidad, la distribución de recursos y la legitimidad de las diferencias sociales. En esta investigación, se consideran tres dimensiones analíticas: la legitimación de la desigualdad, que agrupa actitudes favorables a la jerarquía social, la meritocracia y el orden social; el igualitarismo, orientado a la reducción de las desigualdades mediante la igualdad de oportunidades; y la crítica a la desigualdad, que refiere a la percepción de injusticia frente a las diferencias sociales existentes. En este marco, se formula la siguiente hipótesis:</p>
+<p><strong>H2: El sexismo benevolente se asociará positivamente con la legitimación de la desigualdad, y negativamente con el igualitarismo y la crítica a la desigualdad.</strong></p>
+<p>o: ¿En qué medida las actitudes sexistas se asocian con mayores niveles de orientación a la dominancia social y creencias meritocráticas?</p>
+</section>
+<section id="variables-de-sexismo" class="level1">
+<h1>variables de sexismo</h1>
+<section id="sexismo-benevolente" class="level3">
+<h3 class="anchored" data-anchor-id="sexismo-benevolente">sexismo benevolente:</h3>
+<p>g01_1:Las mujeres tienden a ser más refinadas y a tener un mejor gusto que los hombres</p>
+<p>g01_ 2 : Las mujeres deberían ser queridas y protegidas por los hombres</p>
+</section>
+<section id="sexismo-hostil-o-tradicional" class="level3">
+<h3 class="anchored" data-anchor-id="sexismo-hostil-o-tradicional">sexismo hostil o tradicional:</h3>
+<p>g01_3: En nombre de la igualdad, muchas mujeres intentan conseguir ciertos privilegios</p>
+<p>g01_ 4: Generalmente, cuando una mujer es derrotada limpiamente se queja de haber sufrido discriminación</p>
+<p>g01_5: Cuando no hay muchos trabajos disponibles, los hombres deberían tener más derecho a un trabajo que las mujeres</p>
+<p><br>
+</p>
+</section>
+<section id="variables-dominacion" class="level2">
+<h2 class="anchored" data-anchor-id="variables-dominacion">variables dominacion</h2>
+<section id="dominacion-grupal" class="level3">
+<h3 class="anchored" data-anchor-id="dominacion-grupal">dominacion grupal:</h3>
+</section>
+<section id="c18_01-una-sociedad-ideal-requiere-que-algunos-grupos-estén-en-una-posición-superior-y-otros" class="level3">
+<h3 class="anchored" data-anchor-id="c18_01-una-sociedad-ideal-requiere-que-algunos-grupos-estén-en-una-posición-superior-y-otros">c18_01: Una sociedad ideal requiere que algunos grupos estén en una posición superior y otros</h3>
+<p>c18_12: Algunos grupos de personas son simplemente inferiores a otros grupos</p>
+</section>
+<section id="oposicion-a-la-igualdad" class="level3">
+<h3 class="anchored" data-anchor-id="oposicion-a-la-igualdad">oposicion a la igualdad</h3>
+<p>c18_02: Debiéramos trabajar para dar a todos los grupos la misma oportunidad de tener éxito</p>
+<p>c18_ 03: Deberíamos hacer todo lo posible por igualar las condiciones de diferentes grupos</p>
+</section>
+<section id="meritocracia" class="level3">
+<h3 class="anchored" data-anchor-id="meritocracia">meritocracia:</h3>
+<p>c18_09: En Chile las personas son recompensadas por sus esfuerzos</p>
+<p>c18_010: En Chile las personas son recompensadas por su inteligencia y habilidades</p>
+<p>c18_13: En Chile las personas tienen igualdad de oportunidades para salir adelante</p>
+</section>
+<section id="el-ítem-c18_13-fue-excluido-del-índice-de-meritocracia-debido-a-su-correlación-negativa-con-el-resto-de-la-escala-evidenciada-mediante-el-alfa-de-cronbach." class="level3">
+<h3 class="anchored" data-anchor-id="el-ítem-c18_13-fue-excluido-del-índice-de-meritocracia-debido-a-su-correlación-negativa-con-el-resto-de-la-escala-evidenciada-mediante-el-alfa-de-cronbach.">El ítem c18_13 fue excluido del índice de meritocracia debido a su correlación negativa con el resto de la escala, evidenciada mediante el alfa de Cronbach.</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># librerias, leer base y elegir variables #</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   4.0.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.0.4     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Adjuntando el paquete: 'psych'
+
+The following objects are masked from 'package:ggplot2':
+
+    %+%, alpha</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(haven)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>elsoc19 <span class="ot">&lt;-</span> <span class="fu">read_sav</span>(<span class="st">"ELSOC_W04_v2.01.sav"</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>varelsoc19 <span class="ot">&lt;-</span> elsoc19 <span class="sc">%&gt;%</span> <span class="fu">select</span>(r13_sexo_01, r13_edad_01, g01_01, g01_02, g01_03, g01_04, g01_05,c18_01,c18_12, c18_02, c18_03, c18_09, c18_10, c18_13)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#limpieza casos perdidos, inversion #</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>varelsoc19[varelsoc19 <span class="sc">==</span> <span class="sc">-</span><span class="dv">888</span> <span class="sc">|</span> varelsoc19 <span class="sc">==</span> <span class="sc">-</span><span class="dv">999</span>] <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>varelsoc19 <span class="ot">&lt;-</span> varelsoc19 <span class="sc">%&gt;%</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">c18_02_inv =</span> <span class="dv">6</span> <span class="sc">-</span> c18_02,</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">c18_03_inv =</span> <span class="dv">6</span> <span class="sc">-</span> c18_03</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="dado-que-la-escala-global-de-sexismo-presentó-baja-consistencia-interna-α-.58-se-optó-por-distinguir-entre-sexismo-benevolente-y-sexismo-hostil-en-línea-con-la-propuesta-teórica-de-glick-y-fiske-1996." class="level3">
+<h3 class="anchored" data-anchor-id="dado-que-la-escala-global-de-sexismo-presentó-baja-consistencia-interna-α-.58-se-optó-por-distinguir-entre-sexismo-benevolente-y-sexismo-hostil-en-línea-con-la-propuesta-teórica-de-glick-y-fiske-1996.">Dado que la escala global de sexismo presentó baja consistencia interna (α = .58), se optó por distinguir entre sexismo benevolente y sexismo hostil, en línea con la propuesta teórica de Glick y Fiske (1996).</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># revision de datos con alfa de cronbach #</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>alpha_sexismo_b <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">alpha</span>(varelsoc19 <span class="sc">%&gt;%</span> </span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(g01_01, g01_02)) <span class="co">#sexismo benevolente</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>alpha_sexismo_b<span class="sc">$</span>total</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> raw_alpha std.alpha  G6(smc) average_r    S/N        ase     mean        sd
+ 0.5204052 0.5293674 0.359959  0.359959 1.1248 0.01601793 3.881148 0.7523017
+ median_r
+ 0.359959</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>alpha_sexismo_h <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">alpha</span>(varelsoc19 <span class="sc">%&gt;%</span> </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(g01_03, g01_04, g01_05)) <span class="co">#sexismo hostil</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>alpha_sexismo_h<span class="sc">$</span>total</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> raw_alpha std.alpha   G6(smc) average_r      S/N        ase     mean        sd
+ 0.5301443   0.53638 0.4613074 0.2783151 1.156939 0.01408046 3.025923 0.7100954
+  median_r
+ 0.2102199</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Las subescalas de sexismo benevolente (α = .52) y hostil (α = .53) presentaron una consistencia interna moderada, lo que puede atribuirse al reducido número de ítems y a la heterogeneidad conceptual de las afirmaciones incluidas.</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>alpha_sdod <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">alpha</span>(varelsoc19 <span class="sc">%&gt;%</span> </span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(c18_01, c18_12)) <span class="co"># SDO-D</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>alpha_sdod<span class="sc">$</span>total</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> raw_alpha std.alpha   G6(smc) average_r      S/N        ase     mean        sd
+ 0.6084498 0.6105598 0.4394286 0.4394286 1.567788 0.01330399 2.590347 0.9263842
+  median_r
+ 0.4394286</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>alpha_sdoe <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">alpha</span>(varelsoc19 <span class="sc">%&gt;%</span> </span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(c18_02_inv, c18_03_inv)) <span class="co">#SDO-E</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>alpha_sdoe<span class="sc">$</span>total</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> raw_alpha std.alpha   G6(smc) average_r      S/N         ase     mean
+ 0.7415709 0.7433566 0.5915415 0.5915415 2.896458 0.008828845 1.747875
+        sd  median_r
+ 0.5817791 0.5915415</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>alpha_meritocracia <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">alpha</span>(varelsoc19 <span class="sc">%&gt;%</span> </span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(c18_09, c18_10 )) <span class="co">#meritocracia</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>alpha_meritocracia<span class="sc">$</span>total <span class="co">#El ítem c18_13 fue excluido del índice de meritocracia debido a su correlación negativa con el resto de la escala, evidenciada mediante el alfa de Cronbach.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> raw_alpha std.alpha  G6(smc) average_r      S/N         ase     mean        sd
+   0.82057 0.8204244 0.695525  0.695525 4.568684 0.006138202 2.625551 0.9492215
+ median_r
+ 0.695525</code></pre>
+</div>
+</div>
+<p>paparapapapap</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#creacion indices continuos (promedios) #</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>varelsoc19 <span class="ot">&lt;-</span> varelsoc19 <span class="sc">%&gt;%</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">sexismo_b =</span> <span class="fu">rowMeans</span>(</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>      <span class="fu">select</span>(., g01_01, g01_02),</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>      <span class="at">na.rm =</span> <span class="cn">TRUE</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">sexismo_h =</span> <span class="fu">rowMeans</span>(</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>      <span class="fu">select</span>(., g01_03, g01_04, g01_05),</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a>      <span class="at">na.rm =</span> <span class="cn">TRUE</span></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">sdo_d =</span> <span class="fu">rowMeans</span>(</span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>      <span class="fu">select</span>(., c18_01, c18_12),</span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>      <span class="at">na.rm =</span> <span class="cn">TRUE</span></span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">sdo_e =</span> <span class="fu">rowMeans</span>(</span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>      <span class="fu">select</span>(., c18_02_inv, c18_03_inv),</span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a>      <span class="at">na.rm =</span> <span class="cn">TRUE</span></span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">meritocracia =</span> <span class="fu">rowMeans</span>(</span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a>      <span class="fu">select</span>(., c18_09, c18_10),</span>
+<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a>      <span class="at">na.rm =</span> <span class="cn">TRUE</span></span>
+<span id="cb17-28"><a href="#cb17-28" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb17-29"><a href="#cb17-29" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb17-30"><a href="#cb17-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-31"><a href="#cb17-31" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(varelsoc19 <span class="sc">%&gt;%</span> </span>
+<span id="cb17-32"><a href="#cb17-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(sexismo_b, sexismo_h, sdo_d, sdo_e, meritocracia))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   sexismo_b       sexismo_h         sdo_d          sdo_e        meritocracia  
+ Min.   :1.000   Min.   :1.000   Min.   :1.00   Min.   :1.000   Min.   :1.000  
+ 1st Qu.:3.500   1st Qu.:2.667   1st Qu.:2.00   1st Qu.:1.000   1st Qu.:2.000  
+ Median :4.000   Median :3.000   Median :2.50   Median :2.000   Median :2.500  
+ Mean   :3.881   Mean   :3.026   Mean   :2.59   Mean   :1.748   Mean   :2.626  
+ 3rd Qu.:4.500   3rd Qu.:3.333   3rd Qu.:3.00   3rd Qu.:2.000   3rd Qu.:3.000  
+ Max.   :5.000   Max.   :5.000   Max.   :5.00   Max.   :5.000   Max.   :5.000  
+ NA's   :1       NA's   :3       NA's   :19     NA's   :6       NA's   :12     </code></pre>
+</div>
+</div>
+<pre><code></code></pre>
+<p>en promedio, la muestra muestra niveles relativamente altos de sexismo benevolente (median 4)</p>
+<p>as actitudes hostiles hacia las mujeres son más moderadas que las benevolentes (median 3)</p>
+<p>en promedio, la muestra tiende a rechazar jerarquías grupales explícitas ( median 2.50)</p>
+<p>la muestra muestra baja oposición a la igualdad (median 2)</p>
+<p>apoyo moderado a la idea de que el esfuerzo/inteligencia son recompensados ( median 2.50)</p>
+</section>
+</section>
+<section id="h1-los-niveles-de-sexismo-benevolente-variarán-según-género-y-edad-siendo-más-altos-en-hombres-y-en-individuos-de-mayor-edad" class="level2">
+<h2 class="anchored" data-anchor-id="h1-los-niveles-de-sexismo-benevolente-variarán-según-género-y-edad-siendo-más-altos-en-hombres-y-en-individuos-de-mayor-edad">h1: los niveles de sexismo benevolente variarán según género y edad, siendo más altos en hombres y en individuos de mayor edad</h2>
+<p>continuo?</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#para el genero t test, comparar si el sexismo benevolente es difenrente entre hombres y mujeres</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(sexismo_b <span class="sc">~</span> r13_sexo_01, <span class="at">data =</span> varelsoc19)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Welch Two Sample t-test
+
+data:  sexismo_b by r13_sexo_01
+t = 0.42114, df = 2806.8, p-value = 0.6737
+alternative hypothesis: true difference in means between group 1 and group 2 is not equal to 0
+95 percent confidence interval:
+ -0.04071714  0.06299170
+sample estimates:
+mean in group 1 mean in group 2 
+       3.887692        3.876555 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># edad usaremos pearsons, para ver si la edad aumenta el sexismo benevolente</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_b,</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>         varelsoc19<span class="sc">$</span>r13_edad_01)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's product-moment correlation
+
+data:  varelsoc19$sexismo_b and varelsoc19$r13_edad_01
+t = 4.7555, df = 3364, p-value = 2.063e-06
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.04806537 0.11518396
+sample estimates:
+       cor 
+0.08171731 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># podriamos usar anova si agrupamos edad por grupos</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="h2-sexismo-benevolente-se-asociará-positivamente-con-legitimación-de-desigualdad-y-negativamente-con-igualitarismo" class="level2">
+<h2 class="anchored" data-anchor-id="h2-sexismo-benevolente-se-asociará-positivamente-con-legitimación-de-desigualdad-y-negativamente-con-igualitarismo">h2: sexismo benevolente se asociará positivamente con legitimación de desigualdad y negativamente con igualitarismo</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># legitimacion de desigualdad</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_b,</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>         varelsoc19<span class="sc">$</span>sdo_d)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's product-moment correlation
+
+data:  varelsoc19$sexismo_b and varelsoc19$sdo_d
+t = 9.2673, df = 3395, p-value &lt; 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.1241015 0.1897041
+sample estimates:
+      cor 
+0.1570761 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_b,</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>         varelsoc19<span class="sc">$</span>meritocracia)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's product-moment correlation
+
+data:  varelsoc19$sexismo_b and varelsoc19$meritocracia
+t = 5.6259, df = 3402, p-value = 1.994e-08
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.06261647 0.12918883
+sample estimates:
+       cor 
+0.09601002 </code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co">#igualitariasmo</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_b,</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>         varelsoc19<span class="sc">$</span>sdo_e)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Pearson's product-moment correlation
+
+data:  varelsoc19$sexismo_b and varelsoc19$sdo_e
+t = -1.4984, df = 3408, p-value = 0.1341
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.059174142  0.007913593
+sample estimates:
+        cor 
+-0.02565917 </code></pre>
+</div>
+</div>
+<p>a</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
