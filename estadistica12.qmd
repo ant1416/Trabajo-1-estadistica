@@ -320,3 +320,9 @@ modelo_h <- lm(
 
 summary(modelo_h)
 ```
+
+al aplicar el modelo de regresion lineal a el sexismo benevolente, descubrimos que el modelo explica solo un 3.85% de la variabilidad del sexismo benevolente ( R2: 0.0385), lo que nos dice que el fenomeno es mucho mas complejo de lo que pensabamos primeramente. los principales predictores positivos siendo edad (debil pero significativo), meritocracia (moderado) y principalmente dominancia social, siendo el predictor positivo mas fuerte. sexo no es revelante en este caso, y nuestro unico predictor negativo seria oposicion a la igualda (bajo pero significativo).
+
+al aplicar el modelo al sexismo hostil, en cambio, nos da un R2 de 0.117, El modelo explicando un 11.7% de la variabilidad del sexismo hostil. esto es mucho mas alto que el sexismo benevolente, a pesar de seguir siendo bajo, demostrando mas relacion entre las variables ideologicas con este. al igual que la vez anterior, el predictor de genero no es relevante aca, la edad sigue siendo un predictor positivo pero mas bajo que en sexismo benevolente. maritocracia y opsicion a la igualdad son los 2 positivos, y el predictor mas fuerte positivo es dominancia social, igual que en sexismo benevolente
+
+estos resultados nos dicen que el sexismo hostil se asocia de manera consistente con orientaciones ideológicas jerárquicas y antigualitarias, mientras que el sexismo benevolente presenta una estructura más ambivalente, donde distintos componentes de la dominancia social se relacionan en direcciones opuestas. sexismo hosttil y benevolente son 2 tipos muy diferentes de sexismo, que funcionan con logitas distintas, tal como vimos en los distintos resultados.
