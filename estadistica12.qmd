@@ -292,7 +292,13 @@ cor.test(varelsoc19$sexismo_h, varelsoc19$meritocracia)
 cor.test(varelsoc19$sexismo_h, varelsoc19$sdo_e)
 ```
 
-## modelos de regresion:
+para la hipotesis 2, se relaizaron correlaciones de pearsons para analizar como se relacionan las variables con los diferentes tipos de sexismo. partiendo por el sexismo benvolente, su relacion con la variable de dominacion grupal (sdo-d), el valor p nos indica una relacion positiva entre sexismo benevolente y apoyo a dominacion grupal(r = 0.157, p \< 0.001). en el caso de la meritocracia, esto se repite, contando con una direccion positiva al igual q el anterior. esto sugiere que el sexismo benevolente no solo se vincula con actitudes explícitas de jerarquía social, sino también con creencias más sutiles que legitiman la desigualdad, como la meritocracia. finalmente, No se observó una correlación estadísticamente significativa entre el sexismo benevolente y la oposición a la igualdad (r = -0.026, p = 0.134), lo que indica que no existe evidencia de una asociación entre ambas variables en la muestra analizada.
+
+En conjunto, los resultados muestran que el sexismo benevolente se asocia positivamente con la dominación grupal y con las creencias meritocráticas, lo que respalda parcialmente la hipótesis planteada. Sin embargo, no se encontró una relación significativa con la oposición a la igualdad, lo que sugiere que esta forma de sexismo no implica necesariamente un rechazo explícito a principios igualitarios, sino que opera a través de mecanismos más sutiles de legitimación de la desigualdad.
+
+Con respecto al sexismo hostil, Se observó una correlación positiva y estadísticamente significativa entre el sexismo hostil y la dominación grupal (r = 0.310, p \< 0.001), lo que indica que mayores niveles de actitudes hostiles hacia las mujeres se asocian con un mayor apoyo a la jerarquía entre grupos. Esto, al igual que con sexismo benevolente, se repite con meritocracia,lo que indica que mayores niveles de actitudes hostiles hacia las mujeres se asocian con una mayor adhesión a explicaciones meritocráticas de las diferencias sociales. finalmente, a diferencia con lo ocurrido con el sexismo benevolente, aca la relacion entre sexismo hostil y oposicion a la igualda es positiva, lo que nos dice que Las personas que más apoyan la desigualdad social tienden a mostrar más sexismo hostil, pero la relación es débil.
+
+modelos de regresion:
 
 ```{r}
 #benevolente
