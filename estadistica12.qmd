@@ -48,7 +48,9 @@ Para capturar los constructos latentes, se construyeron índices a partir del pr
 
 Asimismo, para asegurar la correcta dirección de las escalas, se procedió a invertir aquellos ítems redactados en sentido igualitario mediante la fórmula (puntuación máxima + 1) - x, garantizando que valores más altos representen consistentemente una mayor presencia del constructo medido. La consistencia interna de cada escala fue evaluada mediante el coeficiente Alfa de Cronbach.
 
-- Sexismo (Variable Dependiente): Se construyeron dos índices correspondientes a las dimensiones de sexismo benevolente y sexismo hostil, a partir de la batería G01 (ítems g01_1 a g01_5, escala Likert 1–5: 1 = Totalmente en desacuerdo, 5 = Totalmente de acuerdo). El sexismo benevolente se construyó a partir de los ítems g01_1 y g01_2, mientras que el sexismo hostil se construyó a partir de los ítems g01_3, g01_4 y g01_5. Todos los ítems se mantuvieron en su dirección original, de modo que valores más altos indican mayor nivel de sexismo. Los índices fueron calculados como el promedio de los ítems correspondientes a cada dimensión.
+- **Sexismo benevolente (VD1):** Se construyó a partir de la batería G01 (ítems g01_1 y g01_2, escala Likert 1–5: 1 = Totalmente en desacuerdo, 5 = Totalmente de acuerdo), que evalúa creencias que idealizan y refuerzan roles tradicionales de género desde una perspectiva aparentemente positiva. Los ítems se mantuvieron en su dirección original, de modo que valores más altos indican mayor nivel de sexismo benevolente. El índice fue calculado como el promedio de los ítems.
+
+- **Sexismo hostil (VD2):** Se construyó a partir de la batería G01 (ítems g01_3, g01_4 y g01_5, escala Likert 1–5), que evalúa actitudes abiertamente negativas y conflictivas hacia las mujeres. Los ítems se mantuvieron en su dirección original, de modo que valores más altos indican mayor nivel de sexismo hostil. El índice fue calculado como el promedio de los ítems.
 
 - **Legitimación de la Desigualdad (Predictor 1):** Se construyó a partir de la batería C18 (ítems c18_01 y c18_12, escala Likert 1–5: 1 = Totalmente en desacuerdo, 5 = Totalmente de acuerdo), que evalúa actitudes favorables a la jerarquía entre grupos. Los ítems se mantuvieron en su dirección original, de modo que valores más altos indican mayor nivel de legitimación de la desigualdad. El índice fue calculado como el promedio de los ítems.
 
@@ -58,14 +60,13 @@ Asimismo, para asegurar la correcta dirección de las escalas, se procedió a in
 
 **Tabla explicativa de variables seleccionadas**
 
-| Variable                             | Ítems utilizados                  |
-|--------------------------------------|-----------------------------------|
-| Sexismo Benevolente (VD)             | C19_1, C19_2                      |
-| Legitimación de la Desigualdad (IV1) | C18_1, C18_4, C18_5, C18_6, C18_7 |
-| Creencias Meritocráticas (IV2)       | C18_9, C18_10                     |
-| Igualitarismo (IV3)                  | C18_2, C18_3                      |
-
-hasta aqui voy !!
+| Variable                       | Ítems utilizados            |
+|--------------------------------|-----------------------------|
+| Sexismo benevolente (VD1)      | g01_1, g01_2                |
+| Sexismo hostil (VD2)           | g01_3, g01_4, g01_5         |
+| Legitimación de la desigualdad | c18_01, c18_12              |
+| Meritocracia                   | c18_09, c18_10              |
+| Igualitarismo                  | c18_02, c18_03 (invertidos) |
 
 # variables de sexismo
 
