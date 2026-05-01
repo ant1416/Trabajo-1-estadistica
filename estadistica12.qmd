@@ -148,25 +148,19 @@ alpha_meritocracia$total
 
 ### sexismo: alpha de crombach
 
-Sexismo benevolente: con un alpha de cronbach de 0,52 su consistencia es baja a moderada, con relacion del ideal de mayor a 0,70, pero considerando que son solo 2 items, esto puede influir y limitar los valores maximos a los que puede llegar la variable. En este sentido, esto sugiere una asociación moderada entre ellos, indicando que ambos capturan aspectos relacionados del constructo. Por tanto, el índice se considera adecuado para fines exploratorios.
+Las subescalas de sexismo benevolente (α = .52) y hostil (α = .53) presentaron una consistencia interna moderada, lo que puede atribuirse al reducido número de ítems y a la heterogeneidad conceptual de las afirmaciones incluidas.esto puede indicar una asociación positiva moderada, lo que sugiere que ambos ítems capturan aspectos relacionados del constructo. En este sentido, esto sugiere una asociación moderada entre ellos, indicando que ambos capturan aspectos relacionados del constructo. Por tanto, el índice se considera adecuado para fines exploratorios.
 
-sexismo hostil: con un alpha de cronbach de 0,53 aproximadamente, presenta una concistenvia moderada. Si bien este valor se encuentra por debajo del umbral ideal de 0.70, es consistente con lo esperado en escalas compuestas por un número reducido de ítems (en este caso, dos). La correlación promedio entre los ítems (r = 0.36) indica una asociación positiva moderada, lo que sugiere que ambos ítems capturan aspectos relacionados del constructo.
+### alpha de crombach:
 
-Las subescalas de sexismo benevolente (α = .52) y hostil (α = .53) presentaron una consistencia interna moderada, lo que puede atribuirse al reducido número de ítems y a la heterogeneidad conceptual de las afirmaciones incluidas.
-
-### alpha de crombach: 
-
-dominacion grupal: La escala de dominación grupal presenta una consistencia interna aceptable (α = 0.61), situándose por sobre los valores observados en las escalas de sexismo. Este resultado indica una mayor coherencia entre los ítems que componen el índice.
-
-La correlación promedio entre los ítems (r = 0.44) sugiere una asociación moderada-alta, lo que evidencia que ambos ítems capturan de manera consistente la orientación hacia la jerarquía entre grupos.
+dominacion grupal: La escala de dominación grupal presenta una consistencia interna aceptable (α = 0.61), situándose por sobre los valores observados en las escalas de sexismo. Este resultado indica una mayor coherencia entre los ítems que componen el índice, que evidencia que ambos ítems capturan de manera consistente la orientación hacia la jerarquía entre grupos.
 
 En comparación con las escalas de sexismo, este índice presenta una mayor consistencia interna, lo que puede atribuirse a la formulación más homogénea y explícita de los ítems en torno a la jerarquía social.
 
-oposicion a la igualdad: La escala de oposición a la igualdad presenta una alta consistencia interna (α = 0.74), superando el umbral recomendado de 0.70. Este resultado indica que los ítems que componen el índice están fuertemente correlacionados entre sí y capturan de manera coherente el constructo teórico.
+La escala de oposición a la igualdad presenta una alta consistencia interna (α = 0.74), superando el umbral recomendado de 0.70. Este resultado indica que los ítems que componen el índice están fuertemente correlacionados entre sí y capturan de manera coherente el constructo teórico.
 
-meritocracia: La escala de creencias meritocráticas presenta una alta consistencia interna (α = 0.82), superando ampliamente el umbral recomendado de 0.70. Este resultado indica que los ítems que componen el índice están fuertemente correlacionados y capturan de manera coherente el constructo de meritocracia. La correlación promedio entre los ítems (r = 0.70) evidencia una asociación muy alta, lo que sugiere que ambas variables reflejan de forma consistente la creencia de que el éxito social depende de factores individuales como el esfuerzo y las habilidades. La exclusión del ítem c18_13 permitió mejorar significativamente la consistencia interna del índice, lo que evidencia la importancia de evaluar empíricamente la coherencia de los ítems en la construcción de variables latentes
+La escala de creencias meritocráticas presenta una alta consistencia interna (α = 0.82), superando ampliamente el umbral recomendado de 0.70. Este resultado indica que los ítems que componen el índice están fuertemente correlacionados y capturan de manera coherente el constructo de meritocracia. La correlación promedio entre los ítems (r = 0.70) evidencia una asociación muy alta, lo que sugiere que ambas variables reflejan de forma consistente la creencia de que el éxito social depende de factores individuales como el esfuerzo y las habilidades. La exclusión del ítem c18_13 permitió mejorar significativamente la consistencia interna del índice, lo que evidencia la importancia de evaluar empíricamente la coherencia de los ítems en la construcción de variables latentes
 
-En conjunto, los resultados muestran que las escalas asociadas a orientaciones ideológicas (meritocracia y oposición a la igualdad) presentan mayores niveles de consistencia interna que las escalas de sexismo, lo que puede atribuirse a una mayor homogeneidad conceptual en sus ítems.
+En conjunto, los resultados muestran que las escalas asociadas a orientaciones ideológicas (meritocracia y oposición a la igualdad) presentan mayores niveles de consistencia interna que las escalas de sexismo, lo que puede atribuirse a una mayor homogeneidad conceptual en sus items.
 
 ```{r}
 
@@ -204,13 +198,13 @@ summary(varelsoc19 %>%
   select(sexismo_b, sexismo_h, sdo_d, sdo_e, meritocracia))
 ```
 
-Con el objetivo de describir la distribución de los índices construidos, se calcularon estadísticos descriptivos para cada variable continua:
+Con el objetivo de describir la distribución de los indices construidos, se calcularon estadísticos descriptivos para las variables continuas. a continuacion el analisis de estos:
 
-En primer lugar, el sexismo benevolente presenta niveles relativamente altos en la muestra (M = 3.88; Md = 4.00), lo que indica una tendencia general al acuerdo con afirmaciones que refuerzan roles tradicionales de género desde una perspectiva aparentemente positiva.
+En primer lugar, el sexismo benevolente presenta niveles relativamente altos en la muestra (M = 3.88; Md = 4.00), lo que indica una tendencia general a estar de acuerdo con afirmaciones que refuerzan roles tradicionales de género desde una perspectiva aparentemente positiva.
 
 Por su parte, el sexismo hostil muestra niveles más moderados (M = 3.03; Md = 3.00), lo que sugiere una menor adhesión a actitudes abiertamente negativas hacia las mujeres en comparación con el sexismo benevolente.
 
-En relación con la dominación grupal, se observan niveles relativamente bajos (M = 2.59; Md = 2.50), lo que indica una tendencia a rechazar afirmaciones que justifican jerarquías explícitas entre grupos sociales.
+En relación con la dominación grupal, se observan niveles relativamente bajos (M = 2.59; Md = 2.50), lo que indica una tendencia a rechazar las afirmaciones que justifican jerarquías explícitas entre grupos sociales.
 
 De manera consistente, la oposición a la igualdad presenta niveles bajos (M = 1.75; Md = 2.00), evidenciando una alta adhesión a principios igualitarios en la muestra.
 
@@ -218,11 +212,11 @@ Finalmente, las creencias meritocráticas muestran niveles intermedios (M = 2.63
 
 En conjunto, estos resultados sugieren la existencia de una tensión en las actitudes de la muestra: mientras se observa un bajo apoyo a formas explícitas de desigualdad y una alta adhesión a principios igualitarios, persisten niveles relativamente altos de sexismo benevolente y una adhesión moderada a creencias meritocráticas. Esto indica que la legitimación de la desigualdad podría operar de manera más sutil, a través de creencias culturalmente aceptadas y no abiertamente conflictivas.
 
-## Analisis de estadisticos 
+## Analisis de estadisticos
 
 ## H1: Los niveles de sexismo, tanto benevolente como hostil, tenderán a ser más elevados en hombres y en personas de mayor edad.
 
-Para evaluar la H1, se realizaron pruebas t de muestras independientes para comparar los niveles de sexismo benevolente y hostil según género. Asimismo, se calcularon correlaciones de Pearson para examinar la relación entre edad y ambas dimensiones del sexismo.
+Para evaluar la H1, se realizaron pruebas t de muestras independientes para comparar los niveles de sexismo benevolente y hostil según género. Asimismo, se calcularon correlaciones de Pearson para examinar la relación entre edad y ambas dimensiones del sexismo, para finalmente calcular anova, separando la edad en grupos, y cada uno de estos analizandolos con las variables de sexismo.
 
 ```{r}
 #para el genero t test, comparar si el sexismo benevolente es difenrente entre hombres y mujeres
@@ -275,9 +269,11 @@ En consecuencia, no se encuentra evidencia empírica que respalde la hipótesis 
 
 pasando a los resultados de correlacion, Con el fin de analizar la relación entre edad y sexismo benevolente, se estimó una correlación de Pearson. Los resultados muestran una asociación positiva y estadísticamente significativa (r = 0.08, p \< 0.001), lo que indica que a mayor edad, tienden a observarse niveles ligeramente más altos de sexismo benevolente.
 
-No obstante, la magnitud de la correlación es baja, lo que sugiere que, si bien la relación existe, su intensidad es débil. (generaciones).
+No obstante, la magnitud de esta correlación es baja, lo que sugiere que, si bien la relación si existe, su intensidad es debil.
 
-Tampoco se encontraron diferencias significativas en el sexismo hostil según género (t = 0.55, p = 0.585), observándose medias muy similares entre ambos grupos (M₁ = 3.03; M₂ = 3.02).
+ahora pasando a los resultados de Anova, en el caso del sexismo benevolente, Los resultados muestran diferencias estadísticamente significativas entre los grupos etarios (F(2, 3363) = 14.36, p \< 0.001), lo que indica que los niveles de sexismo varían en función de la edad. en cambio, a pesar de que con el sexismo hostil los resultados igual indican diferencias estadísticamente significativas entre los grupos (F(2, 3361) = 5.42, p \< 0.01), en comparación con el sexismo benevolente, la magnitud de estas diferencias es menor.
+
+Para finalizar, en conjunto, no se observan diferencias significativas de los resultados segun genero, sin embargo, tanto los análisis de correlación como los análisis de varianza evidencian que la edad se asocia significativamente con ambas dimensiones del sexismo. En particular, se observan diferencias entre grupos etarios y una relación positiva entre edad y sexismo, aunque de magnitud baja. Estos hallazgos respaldan parcialmente la hipótesis planteada, confirmando la existencia de variaciones según edad, pero no según género.
 
 ## H2: El sexismo, tanto benevolente como hostil, se asociará positivamente con la dominación grupal y las creencias meritocráticas, y negativamente con el igualitarismo.
 
