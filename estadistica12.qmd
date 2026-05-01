@@ -48,15 +48,15 @@ Para capturar los constructos latentes, se construyeron índices a partir del pr
 
 Asimismo, para asegurar la correcta dirección de las escalas, se procedió a invertir aquellos ítems redactados en sentido igualitario mediante la fórmula (puntuación máxima + 1) - x, garantizando que valores más altos representen consistentemente una mayor presencia del constructo medido. La consistencia interna de cada escala fue evaluada mediante el coeficiente Alfa de Cronbach.
 
-- **Sexismo benevolente (VD1):** Se construyó a partir de la batería G01 (ítems g01_1 y g01_2, escala Likert 1–5: 1 = Totalmente en desacuerdo, 5 = Totalmente de acuerdo), que evalúa creencias que idealizan y refuerzan roles tradicionales de género desde una perspectiva aparentemente positiva. Los ítems se mantuvieron en su dirección original, de modo que valores más altos indican mayor nivel de sexismo benevolente. El índice fue calculado como el promedio de los ítems.
+-   **Sexismo benevolente (VD1):** Se construyó a partir de la batería G01 (ítems g01_1 y g01_2, escala Likert 1–5: 1 = Totalmente en desacuerdo, 5 = Totalmente de acuerdo), que evalúa creencias que idealizan y refuerzan roles tradicionales de género desde una perspectiva aparentemente positiva. Los ítems se mantuvieron en su dirección original, de modo que valores más altos indican mayor nivel de sexismo benevolente. El índice fue calculado como el promedio de los ítems.
 
-- **Sexismo hostil (VD2):** Se construyó a partir de la batería G01 (ítems g01_3, g01_4 y g01_5, escala Likert 1–5), que evalúa actitudes abiertamente negativas y conflictivas hacia las mujeres. Los ítems se mantuvieron en su dirección original, de modo que valores más altos indican mayor nivel de sexismo hostil. El índice fue calculado como el promedio de los ítems.
+-   **Sexismo hostil (VD2):** Se construyó a partir de la batería G01 (ítems g01_3, g01_4 y g01_5, escala Likert 1–5), que evalúa actitudes abiertamente negativas y conflictivas hacia las mujeres. Los ítems se mantuvieron en su dirección original, de modo que valores más altos indican mayor nivel de sexismo hostil. El índice fue calculado como el promedio de los ítems.
 
-- **Dominación grupal (Predictor 1):** Se construyó a partir de la batería C18 (ítems c18_01 y c18_12, escala Likert 1–5: 1 = Totalmente en desacuerdo, 5 = Totalmente de acuerdo), que evalúa actitudes favorables a la jerarquía entre grupos. Los ítems se mantuvieron en su dirección original, de modo que valores más altos indican mayor nivel de legitimación de la desigualdad. El índice fue calculado como el promedio de los ítems.
+-   **Dominación grupal (Predictor 1):** Se construyó a partir de la batería C18 (ítems c18_01 y c18_12, escala Likert 1–5: 1 = Totalmente en desacuerdo, 5 = Totalmente de acuerdo), que evalúa actitudes favorables a la jerarquía entre grupos. Los ítems se mantuvieron en su dirección original, de modo que valores más altos indican mayor nivel de legitimación de la desigualdad. El índice fue calculado como el promedio de los ítems.
 
-- **Oposición a la igualdad (Predictor 2):** Se construyó a partir de la batería C18 (ítems c18_02 y c18_03, escala Likert 1–5), que evalúa el apoyo a la igualdad de oportunidades entre grupos. Ambos ítems fueron invertidos para asegurar consistencia direccional, de modo que valores más altos en el índice reflejan una mayor oposición a la igualdad y una mayor orientación hacia la desigualdad. El índice fue calculado como el promedio de los ítems.
+-   **Oposición a la igualdad (Predictor 2):** Se construyó a partir de la batería C18 (ítems c18_02 y c18_03, escala Likert 1–5), que evalúa el apoyo a la igualdad de oportunidades entre grupos. Ambos ítems fueron invertidos para asegurar consistencia direccional, de modo que valores más altos en el índice reflejan una mayor oposición a la igualdad y una mayor orientación hacia la desigualdad. El índice fue calculado como el promedio de los ítems.
 
-- **Meritocracia (Predictor 3):** Se construyó a partir de la batería C18 (ítems c18_09 y c18_10, escala Likert 1–5), que evalúa la atribución del éxito a factores individuales como el esfuerzo y las habilidades. El ítem c18_13 (“En Chile las personas tienen igualdad de oportunidades para salir adelante”) fue excluido del índice debido a su correlación negativa con el resto de la escala, evidenciada mediante el coeficiente Alfa de Cronbach. Los ítems restantes se mantuvieron en su dirección original, de modo que valores más altos indican mayor adhesión a creencias meritocráticas. El índice fue calculado como el promedio de los ítems.
+-   **Meritocracia (Predictor 3):** Se construyó a partir de la batería C18 (ítems c18_09 y c18_10, escala Likert 1–5), que evalúa la atribución del éxito a factores individuales como el esfuerzo y las habilidades. El ítem c18_13 (“En Chile las personas tienen igualdad de oportunidades para salir adelante”) fue excluido del índice debido a su correlación negativa con el resto de la escala, evidenciada mediante el coeficiente Alfa de Cronbach. Los ítems restantes se mantuvieron en su dirección original, de modo que valores más altos indican mayor adhesión a creencias meritocráticas. El índice fue calculado como el promedio de los ítems.
 
 **Tabla explicativa de variables seleccionadas**
 
@@ -103,7 +103,9 @@ varelsoc19 <- varelsoc19 %>%
   
 ```
 
-### Dado que la escala global de sexismo presentó baja consistencia interna (α = .58), se optó por distinguir entre sexismo benevolente y sexismo hostil, en línea con la propuesta teórica de Glick y Fiske (1996).
+### 
+
+Primeramente, comenzaremos analizando el alpha de cronbach de todas nuestros indices construidos, para saber que tan bien estan relacionados entre si los item de una escala, y si realmente estan midiendo lo mismo:
 
 ```{r}
 
@@ -140,10 +142,31 @@ alpha_meritocracia <- psych::alpha(varelsoc19 %>%
   select(c18_09, c18_10 )) #meritocracia
 
 
-alpha_meritocracia$total #El ítem c18_13 fue excluido del índice de meritocracia debido a su correlación negativa con el resto de la escala, evidenciada mediante el alfa de Cronbach.
+alpha_meritocracia$total 
+#El ítem c18_13 fue excluido del índice de meritocracia debido a su correlación negativa con el resto de la escala, evidenciada mediante el alfa de Cronbach.
 ```
 
-paparapapapap
+### sexismo: alpha de crombach
+
+Sexismo benevolente: con un alpha de cronbach de 0,52 su consistencia es baja a moderada, con relacion del ideal de mayor a 0,70, pero considerando que son solo 2 items, esto puede influir y limitar los valores maximos a los que puede llegar la variable. En este sentido, esto sugiere una asociación moderada entre ellos, indicando que ambos capturan aspectos relacionados del constructo. Por tanto, el índice se considera adecuado para fines exploratorios.
+
+sexismo hostil: con un alpha de cronbach de 0,53 aproximadamente, presenta una concistenvia moderada. Si bien este valor se encuentra por debajo del umbral ideal de 0.70, es consistente con lo esperado en escalas compuestas por un número reducido de ítems (en este caso, dos). La correlación promedio entre los ítems (r = 0.36) indica una asociación positiva moderada, lo que sugiere que ambos ítems capturan aspectos relacionados del constructo.
+
+Las subescalas de sexismo benevolente (α = .52) y hostil (α = .53) presentaron una consistencia interna moderada, lo que puede atribuirse al reducido número de ítems y a la heterogeneidad conceptual de las afirmaciones incluidas.
+
+### alpha de crombach: 
+
+dominacion grupal: La escala de dominación grupal presenta una consistencia interna aceptable (α = 0.61), situándose por sobre los valores observados en las escalas de sexismo. Este resultado indica una mayor coherencia entre los ítems que componen el índice.
+
+La correlación promedio entre los ítems (r = 0.44) sugiere una asociación moderada-alta, lo que evidencia que ambos ítems capturan de manera consistente la orientación hacia la jerarquía entre grupos.
+
+En comparación con las escalas de sexismo, este índice presenta una mayor consistencia interna, lo que puede atribuirse a la formulación más homogénea y explícita de los ítems en torno a la jerarquía social.
+
+oposicion a la igualdad: La escala de oposición a la igualdad presenta una alta consistencia interna (α = 0.74), superando el umbral recomendado de 0.70. Este resultado indica que los ítems que componen el índice están fuertemente correlacionados entre sí y capturan de manera coherente el constructo teórico.
+
+meritocracia: La escala de creencias meritocráticas presenta una alta consistencia interna (α = 0.82), superando ampliamente el umbral recomendado de 0.70. Este resultado indica que los ítems que componen el índice están fuertemente correlacionados y capturan de manera coherente el constructo de meritocracia. La correlación promedio entre los ítems (r = 0.70) evidencia una asociación muy alta, lo que sugiere que ambas variables reflejan de forma consistente la creencia de que el éxito social depende de factores individuales como el esfuerzo y las habilidades. La exclusión del ítem c18_13 permitió mejorar significativamente la consistencia interna del índice, lo que evidencia la importancia de evaluar empíricamente la coherencia de los ítems en la construcción de variables latentes
+
+En conjunto, los resultados muestran que las escalas asociadas a orientaciones ideológicas (meritocracia y oposición a la igualdad) presentan mayores niveles de consistencia interna que las escalas de sexismo, lo que puede atribuirse a una mayor homogeneidad conceptual en sus ítems.
 
 ```{r}
 
@@ -181,52 +204,117 @@ summary(varelsoc19 %>%
   select(sexismo_b, sexismo_h, sdo_d, sdo_e, meritocracia))
 ```
 
-```         
-```
+Con el objetivo de describir la distribución de los índices construidos, se calcularon estadísticos descriptivos para cada variable continua:
 
-en promedio, la muestra muestra niveles relativamente altos de sexismo benevolente (median 4)
+En primer lugar, el sexismo benevolente presenta niveles relativamente altos en la muestra (M = 3.88; Md = 4.00), lo que indica una tendencia general al acuerdo con afirmaciones que refuerzan roles tradicionales de género desde una perspectiva aparentemente positiva.
 
-as actitudes hostiles hacia las mujeres son más moderadas que las benevolentes (median 3)
+Por su parte, el sexismo hostil muestra niveles más moderados (M = 3.03; Md = 3.00), lo que sugiere una menor adhesión a actitudes abiertamente negativas hacia las mujeres en comparación con el sexismo benevolente.
 
-en promedio, la muestra tiende a rechazar jerarquías grupales explícitas ( median 2.50)
+En relación con la dominación grupal, se observan niveles relativamente bajos (M = 2.59; Md = 2.50), lo que indica una tendencia a rechazar afirmaciones que justifican jerarquías explícitas entre grupos sociales.
 
-la muestra muestra baja oposición a la igualdad (median 2)
+De manera consistente, la oposición a la igualdad presenta niveles bajos (M = 1.75; Md = 2.00), evidenciando una alta adhesión a principios igualitarios en la muestra.
 
-apoyo moderado a la idea de que el esfuerzo/inteligencia son recompensados ( median 2.50)
+Finalmente, las creencias meritocráticas muestran niveles intermedios (M = 2.63; Md = 2.50), lo que refleja una adhesión moderada a la idea de que el éxito social depende del esfuerzo y las habilidades individuales.
 
-## h1: los niveles de sexismo benevolente variarán según género y edad, siendo más altos en hombres y en individuos de mayor edad
+En conjunto, estos resultados sugieren la existencia de una tensión en las actitudes de la muestra: mientras se observa un bajo apoyo a formas explícitas de desigualdad y una alta adhesión a principios igualitarios, persisten niveles relativamente altos de sexismo benevolente y una adhesión moderada a creencias meritocráticas. Esto indica que la legitimación de la desigualdad podría operar de manera más sutil, a través de creencias culturalmente aceptadas y no abiertamente conflictivas.
 
-continuo?
+## Analisis de estadisticos 
+
+## H1: Los niveles de sexismo, tanto benevolente como hostil, tenderán a ser más elevados en hombres y en personas de mayor edad.
+
+Para evaluar la H1, se realizaron pruebas t de muestras independientes para comparar los niveles de sexismo benevolente y hostil según género. Asimismo, se calcularon correlaciones de Pearson para examinar la relación entre edad y ambas dimensiones del sexismo.
 
 ```{r}
 #para el genero t test, comparar si el sexismo benevolente es difenrente entre hombres y mujeres
 
 t.test(sexismo_b ~ r13_sexo_01, data = varelsoc19)
+t.test(sexismo_h ~ r13_sexo_01, data = varelsoc19)
 
-# edad usaremos pearsons, para ver si la edad aumenta el sexismo benevolente
+#correlacion de pearsons para edad continua
 
-cor.test(varelsoc19$sexismo_b,
-         varelsoc19$r13_edad_01)
+cor.test(varelsoc19$sexismo_b, varelsoc19$r13_edad_01)
+cor.test(varelsoc19$sexismo_h, varelsoc19$r13_edad_01)
 
-# podriamos usar anova si agrupamos edad por grupos
+# podriamos usar anova para medir edad por grupos
+
+varelsoc19 <- varelsoc19 %>%
+  mutate(
+    edad_grupo = case_when(
+      r13_edad_01 < 30 ~ "Joven",
+      r13_edad_01 >= 30 & r13_edad_01 < 50 ~ "Adulto",
+      r13_edad_01 >= 50 ~ "Mayor"
+    )
+  )
+
+anova_b <- aov(sexismo_b ~ edad_grupo, data = varelsoc19)
+summary(anova_b)
+
+anova_h <- aov(sexismo_h ~ edad_grupo, data = varelsoc19)
+summary(anova_h)
+
+#grafico anova
+
+ggplot(varelsoc19, aes(x = edad_grupo, y = sexismo_b)) +
+  geom_boxplot()
+
+ggplot(varelsoc19, aes(x = edad_grupo, y = sexismo_h)) +
+  geom_boxplot()
 ```
 
-## h2: sexismo benevolente se asociará positivamente con legitimación de desigualdad y negativamente con igualitarismo
+se realizo 2 t-test, uno a sexismo benevolente y otro a sexismo hostil para ver como afecta el genero al sexismo.
+
+partiendo por el sexismo benevolente, Los resultados indican que no existen diferencias estadísticamente significativas entre hombres y mujeres (t = 0.42, p = 0.67).
+
+En términos descriptivos, ambos grupos presentan niveles muy similares de sexismo benevolente (M_hombres = 3.89; M_mujeres = 3.88), lo que sugiere que este tipo de actitudes se distribuye de manera homogénea en la población.
+
+En consecuencia, no se encuentra evidencia para apoyar la hipótesis de que los hombres presentan niveles más altos de sexismo benevolente que las mujeres.
+
+pasando al sexismo hostil, la historia se repite. ambos grupos presentan niveles muy similares de sexismo hostil (M_hombres = 3.03; M_mujeres = 3.02), lo que sugiere una distribución homogénea de estas actitudes en la muestra.
+
+En consecuencia, no se encuentra evidencia empírica que respalde la hipótesis de que los hombres presentan mayores niveles de sexismo hostil que las mujeres.
+
+pasando a los resultados de correlacion, Con el fin de analizar la relación entre edad y sexismo benevolente, se estimó una correlación de Pearson. Los resultados muestran una asociación positiva y estadísticamente significativa (r = 0.08, p \< 0.001), lo que indica que a mayor edad, tienden a observarse niveles ligeramente más altos de sexismo benevolente.
+
+No obstante, la magnitud de la correlación es baja, lo que sugiere que, si bien la relación existe, su intensidad es débil. (generaciones).
+
+Tampoco se encontraron diferencias significativas en el sexismo hostil según género (t = 0.55, p = 0.585), observándose medias muy similares entre ambos grupos (M₁ = 3.03; M₂ = 3.02).
+
+## H2: El sexismo, tanto benevolente como hostil, se asociará positivamente con la dominación grupal y las creencias meritocráticas, y negativamente con el igualitarismo.
+
+Para evaluar la H2, se analizaron correlaciones entre ambas dimensiones del sexismo y las orientaciones hacia la legitimación de la desigualdad.
 
 ```{r}
  
-# legitimacion de desigualdad
+# benevolente
+cor.test(varelsoc19$sexismo_b, varelsoc19$sdo_d)
+cor.test(varelsoc19$sexismo_b, varelsoc19$meritocracia)
+cor.test(varelsoc19$sexismo_b, varelsoc19$sdo_e)
 
-cor.test(varelsoc19$sexismo_b,
-         varelsoc19$sdo_d)
-
-cor.test(varelsoc19$sexismo_b,
-         varelsoc19$meritocracia)
-
-#igualitariasmo
-
-cor.test(varelsoc19$sexismo_b,
-         varelsoc19$sdo_e)
+# hostil
+cor.test(varelsoc19$sexismo_h, varelsoc19$sdo_d)
+cor.test(varelsoc19$sexismo_h, varelsoc19$meritocracia)
+cor.test(varelsoc19$sexismo_h, varelsoc19$sdo_e)
 ```
 
-a
+## modelos de regresion:
+
+```{r}
+#benevolente
+
+modelo_b <- lm(
+  sexismo_b ~ r13_sexo_01 + r13_edad_01 + sdo_d + sdo_e + meritocracia,
+  data = varelsoc19
+)
+
+summary(modelo_b)
+
+
+#hostil: 
+
+modelo_h <- lm(
+  sexismo_h ~ r13_sexo_01 + r13_edad_01 + sdo_d + sdo_e + meritocracia,
+  data = varelsoc19
+)
+
+summary(modelo_h)
+```
