@@ -52,11 +52,11 @@ Asimismo, para asegurar la correcta dirección de las escalas, se procedió a in
 
 - **Sexismo hostil (VD2):** Se construyó a partir de la batería G01 (ítems g01_3, g01_4 y g01_5, escala Likert 1–5), que evalúa actitudes abiertamente negativas y conflictivas hacia las mujeres. Los ítems se mantuvieron en su dirección original, de modo que valores más altos indican mayor nivel de sexismo hostil. El índice fue calculado como el promedio de los ítems.
 
-- **Legitimación de la Desigualdad (Predictor 1):** Se construyó a partir de la batería C18 (ítems c18_01 y c18_12, escala Likert 1–5: 1 = Totalmente en desacuerdo, 5 = Totalmente de acuerdo), que evalúa actitudes favorables a la jerarquía entre grupos. Los ítems se mantuvieron en su dirección original, de modo que valores más altos indican mayor nivel de legitimación de la desigualdad. El índice fue calculado como el promedio de los ítems.
+- **Dominación grupal (Predictor 1):** Se construyó a partir de la batería C18 (ítems c18_01 y c18_12, escala Likert 1–5: 1 = Totalmente en desacuerdo, 5 = Totalmente de acuerdo), que evalúa actitudes favorables a la jerarquía entre grupos. Los ítems se mantuvieron en su dirección original, de modo que valores más altos indican mayor nivel de legitimación de la desigualdad. El índice fue calculado como el promedio de los ítems.
 
-- **Creencias Meritocráticas (Predictor 2):** Se construyó a partir de la batería C18 (ítems c18_09 y c18_10, escala Likert 1–5), que evalúa la atribución del éxito a factores individuales como el esfuerzo y las habilidades. Los ítems se mantuvieron en su dirección original, de modo que valores más altos indican mayor adhesión a creencias meritocráticas. El índice fue calculado como el promedio de los ítems.
+- **Oposición a la igualdad (Predictor 2):** Se construyó a partir de la batería C18 (ítems c18_02 y c18_03, escala Likert 1–5), que evalúa el apoyo a la igualdad de oportunidades entre grupos. Ambos ítems fueron invertidos para asegurar consistencia direccional, de modo que valores más altos en el índice reflejan una mayor oposición a la igualdad y una mayor orientación hacia la desigualdad. El índice fue calculado como el promedio de los ítems.
 
-- **Igualitarismo (Predictor 3):** Se construyó a partir de la batería C18 (ítems c18_02 y c18_03, escala Likert 1–5), que evalúa el apoyo a la igualdad de oportunidades entre grupos. Ambos ítems fueron invertidos para asegurar consistencia direccional, de modo que valores más altos en el índice reflejan una menor adhesión al igualitarismo y una mayor orientación hacia la desigualdad. El índice fue calculado como el promedio de los ítems.
+- **Meritocracia (Predictor 3):** Se construyó a partir de la batería C18 (ítems c18_09 y c18_10, escala Likert 1–5), que evalúa la atribución del éxito a factores individuales como el esfuerzo y las habilidades. El ítem c18_13 (“En Chile las personas tienen igualdad de oportunidades para salir adelante”) fue excluido del índice debido a su correlación negativa con el resto de la escala, evidenciada mediante el coeficiente Alfa de Cronbach. Los ítems restantes se mantuvieron en su dirección original, de modo que valores más altos indican mayor adhesión a creencias meritocráticas. El índice fue calculado como el promedio de los ítems.
 
 **Tabla explicativa de variables seleccionadas**
 
@@ -67,48 +67,6 @@ Asimismo, para asegurar la correcta dirección de las escalas, se procedió a in
 | Legitimación de la desigualdad | c18_01, c18_12              |
 | Meritocracia                   | c18_09, c18_10              |
 | Igualitarismo                  | c18_02, c18_03 (invertidos) |
-
-# variables de sexismo
-
-### sexismo benevolente:
-
-g01_1:Las mujeres tienden a ser más refinadas y a tener un mejor gusto que los hombres
-
-g01\_ 2 : Las mujeres deberían ser queridas y protegidas por los hombres
-
-### sexismo hostil o tradicional:
-
-g01_3: En nombre de la igualdad, muchas mujeres intentan conseguir ciertos privilegios
-
-g01\_ 4: Generalmente, cuando una mujer es derrotada limpiamente se queja de haber sufrido discriminación
-
-g01_5: Cuando no hay muchos trabajos disponibles, los hombres deberían tener más derecho a un trabajo que las mujeres
-
-\
-
-## variables dominacion
-
-### dominacion grupal:
-
-### c18_01: Una sociedad ideal requiere que algunos grupos estén en una posición superior y otros
-
-c18_12: Algunos grupos de personas son simplemente inferiores a otros grupos
-
-### oposicion a la igualdad
-
-c18_02: Debiéramos trabajar para dar a todos los grupos la misma oportunidad de tener éxito
-
-c18\_ 03: Deberíamos hacer todo lo posible por igualar las condiciones de diferentes grupos
-
-### meritocracia:
-
-c18_09: En Chile las personas son recompensadas por sus esfuerzos
-
-c18_010: En Chile las personas son recompensadas por su inteligencia y habilidades
-
-c18_13: En Chile las personas tienen igualdad de oportunidades para salir adelante
-
-### El ítem c18_13 fue excluido del índice de meritocracia debido a su correlación negativa con el resto de la escala, evidenciada mediante el alfa de Cronbach.
 
 ```{r}
 
