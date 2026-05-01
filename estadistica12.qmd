@@ -60,13 +60,13 @@ Asimismo, para asegurar la correcta dirección de las escalas, se procedió a in
 
 **Tabla explicativa de variables seleccionadas**
 
-| Variable                       | Ítems utilizados            |
-|--------------------------------|-----------------------------|
-| Sexismo benevolente (VD1)      | g01_1, g01_2                |
-| Sexismo hostil (VD2)           | g01_3, g01_4, g01_5         |
-| Legitimación de la desigualdad | c18_01, c18_12              |
-| Meritocracia                   | c18_09, c18_10              |
-| Igualitarismo                  | c18_02, c18_03 (invertidos) |
+| Variable                  | Ítems utilizados            |
+|---------------------------|-----------------------------|
+| Sexismo benevolente (VD1) | g01_1, g01_2                |
+| Sexismo hostil (VD2)      | g01_3, g01_4, g01_5         |
+| Dominación grupal         | c18_01, c18_12              |
+| Oposición a la igualdad   | c18_02, c18_03 (invertidos) |
+| Meritocracia              | c18_09, c18_10              |
 
 ```{r}
 
