@@ -3,6 +3,8 @@ title: "trabajo estadistica 1"
 format:
   html:
     css: styles.css
+    bibliography: bibliografia.bib
+csl: https://www.zotero.org/styles/apa
 editor: visual
 ---
 
@@ -335,7 +337,7 @@ En conjunto, los resultados evidencian una tensión entre la adhesión declarada
 
 **Bibliografía**
 
-(Paper). *Social Dominance: An Intergroup Theory of Social Hierarchy and Oppression* . By Jim Sidanius and Felicia Pratto. New York: Cambridge University Press, 1999. Pp. X+403. *American Journal of Sociology*, vol. 106, no. 5, Mar. 2001, pp. 1436–40. <https://doi.org/10.1086/320823>.
+*Social Dominance: An Intergroup Theory of Social Hierarchy and Oppression* . By Jim Sidanius and Felicia Pratto. New York: Cambridge University Press, 1999. Pp. X+403. *American Journal of Sociology*, vol. 106, no. 5, Mar. 2001, pp. 1436–40. <https://doi.org/10.1086/320823>.
 
 Glick, Peter, and Susan T. Fiske. “The Ambivalent Sexism Inventory: Differentiating Hostile and Benevolent Sexism.” *Journal of Personality and Social Psychology*, vol. 70, no. 3, 19960301, pp. 491–512. *0h10uyi92-y-https-research-ebsco-com.itmsp.museknowledge.com*, <https://doi.org/10.1037/0022-3514.70.3.491>.
 
