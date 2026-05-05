@@ -265,9 +265,9 @@ En el caso del sexismo hostil, se observa un patrón similar, ambos grupos prese
 
 No se encuentra evidencia empírica que respalde la hipótesis de que los hombres presentan mayores niveles de sexismo hostil que las mujeres.
 
-En relación a los resultados de correlación, Con el fin de analizar la relación entre edad y sexismo benevolente, se estimó una correlación de Pearson. Los resultados muestran una asociación positiva y estadísticamente significativa (r = 0.08, p \< 0.001), lo que indica que a mayor edad, tienden a observarse niveles ligeramente más altos de sexismo benevolente.
+En relación a los resultados de correlación, con el fin de analizar la relación entre edad y sexismo benevolente, se estimó una correlación de Pearson. Los resultados muestran una asociación positiva y estadísticamente significativa (r = 0.08, p \< 0.001), lo que indica que a mayor edad, tienden a observarse niveles ligeramente más altos de sexismo benevolente.
 
-No obstante, la magnitud de esta correlación es baja, lo que sugiere que, si bien la relación si existe, su intensidad es débil.
+No obstante, la magnitud de esta correlación es baja, lo que sugiere que, si bien la relación sí existe, su intensidad es débil.
 
 Ahora, pasando a los resultados de ANOVA, en el caso del sexismo benevolente, se observan diferencias estadísticamente significativas entre los grupos etarios (F(2, 3363) = 14.36, p \< 0.001), lo que indica que los niveles de sexismo varían en función de la edad. En términos de dirección, se observa que los niveles de sexismo benevolente tienden a ser mayores en los grupos de mayor edad en comparación con los grupos más jóvenes. En cambio, en el caso del sexismo hostil, si bien también se identifican diferencias significativas entre los grupos (F(2, 3361) = 5.42, p \< 0.01), la magnitud de estas diferencias es menor. No obstante, se mantiene el mismo patrón general, observándose niveles ligeramente más altos de sexismo hostil en los grupos de mayor edad.
 
