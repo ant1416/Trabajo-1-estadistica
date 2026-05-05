@@ -148,7 +148,7 @@ alpha_meritocracia$total
 
 **Sexismo**
 
-En sexismo benevolente (α = .52) y hostil (α = .53) se observa una consistencia interna moderada, lo que puede atribuirse al reducido número de ítems y a la heterogeneidad conceptual de las afirmaciones incluidas. Si bien estos valores no alcanzan niveles óptimos, los índices presentan una coherencia interna suficiente para captar el constructo en el contexto de este estudio. Por tanto, se consideran pertinentes para los fines de esta investigación, especialmente en su carácter exploratorio
+En sexismo benevolente (α = .52) y hostil (α = .53) se observa una consistencia interna moderada, lo que puede atribuirse al reducido número de ítems y a la heterogeneidad conceptual de las afirmaciones incluidas. Si bien estos valores no alcanzan niveles óptimos, los índices presentan una coherencia interna suficiente para captar el constructo en el contexto de este estudio. Por tanto, se consideran pertinentes para los fines de esta investigación, especialmente en su carácter exploratorio.
 
 **Dominación Social**
 
@@ -261,11 +261,11 @@ Partiendo por el sexismo benevolente, los resultados indican que no existen dife
 
 En términos descriptivos, ambos grupos presentan niveles muy similares de sexismo benevolente (hombres = 3.89; mujeres = 3.88), lo que sugiere que este tipo de actitudes se distribuye de manera homogénea en la población.
 
-En el caso del sexismo hostil, la historia se repite. Ambos grupos presentan niveles muy similares de sexismo hostil (hombres = 3.03; mujeres = 3.02), lo que sugiere una distribución homogénea de estas actitudes en la muestra.
+En el caso del sexismo hostil, se observa un patrón similar, ambos grupos presentan niveles muy similares de sexismo hostil (hombres = 3.03; mujeres = 3.02), lo que sugiere una distribución homogénea de estas actitudes en la muestra.
 
 No se encuentra evidencia empírica que respalde la hipótesis de que los hombres presentan mayores niveles de sexismo hostil que las mujeres.
 
-pasando a los resultados de correlación, Con el fin de analizar la relación entre edad y sexismo benevolente, se estimó una correlación de Pearson. Los resultados muestran una asociación positiva y estadísticamente significativa (r = 0.08, p \< 0.001), lo que indica que a mayor edad, tienden a observarse niveles ligeramente más altos de sexismo benevolente.
+En relación a los resultados de correlación, Con el fin de analizar la relación entre edad y sexismo benevolente, se estimó una correlación de Pearson. Los resultados muestran una asociación positiva y estadísticamente significativa (r = 0.08, p \< 0.001), lo que indica que a mayor edad, tienden a observarse niveles ligeramente más altos de sexismo benevolente.
 
 No obstante, la magnitud de esta correlación es baja, lo que sugiere que, si bien la relación si existe, su intensidad es débil.
 
@@ -273,7 +273,7 @@ Ahora, pasando a los resultados de ANOVA, en el caso del sexismo benevolente, se
 
 En conjunto, no se observan diferencias significativas en los niveles de sexismo según género. En contraste, tanto los análisis de correlación como los de varianza indican que la edad se asocia de manera significativa con ambas dimensiones del sexismo. En particular, se identifican diferencias entre grupos etarios y una relación positiva entre edad y sexismo, aunque de magnitud baja. Estos hallazgos respaldan parcialmente la hipótesis planteada, confirmando la existencia de variaciones según edad, pero no según género.
 
-### H2: El sexismo, tanto benevolente como hostil, se asociará positivamente con la dominación grupal y las creencias meritocráticas, y negativamente con el igualitarismo.
+### H2: El sexismo, tanto benevolente como hostil, se asociará positivamente con la dominación grupal y las creencias meritocráticas, y negativamente con la oposición a la igualdad.
 
 ```{r}
  
