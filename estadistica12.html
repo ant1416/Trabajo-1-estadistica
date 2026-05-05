@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>trabajo estadistica 1</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -21,8 +24,9 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 /* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -33,7 +37,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -58,21 +62,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <script src="estadistica12_files/libs/clipboard/clipboard.min.js"></script>
-<script src="estadistica12_files/libs/quarto-html/quarto.js"></script>
+<script src="estadistica12_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="estadistica12_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="estadistica12_files/libs/quarto-html/popper.min.js"></script>
 <script src="estadistica12_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="estadistica12_files/libs/quarto-html/anchor.min.js"></script>
 <link href="estadistica12_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="estadistica12_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="estadistica12_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="estadistica12_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="estadistica12_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="estadistica12_files/libs/bootstrap/bootstrap-1bc8a17f135ab3d594c857e9f48e611b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="estadistica12_files/libs/bootstrap/bootstrap-efbb37e9afcc02144ebbc7afd12a776f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="fullcontent">
+<body class="fullcontent quarto-light">
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 
@@ -158,9 +163,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># librerias, leer base y elegir variables #</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># librerias, leer base y elegir variables #</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.4     ✔ readr     2.1.5
@@ -173,7 +178,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>
 Adjuntando el paquete: 'psych'
@@ -182,17 +187,17 @@ The following objects are masked from 'package:ggplot2':
 
     %+%, alpha</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(haven)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(haven)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>elsoc19 <span class="ot">&lt;-</span> <span class="fu">read_sav</span>(<span class="st">"ELSOC_W04_v2.01.sav"</span>)</span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>varelsoc19 <span class="ot">&lt;-</span> elsoc19 <span class="sc">%&gt;%</span> <span class="fu">select</span>(r13_sexo_01, r13_edad_01, g01_01, g01_02, g01_03, g01_04, g01_05,c18_01,c18_12, c18_02, c18_03, c18_09, c18_10, c18_13)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>varelsoc19 <span class="ot">&lt;-</span> elsoc19 <span class="sc">%&gt;%</span> <span class="fu">select</span>(r13_sexo_01, r13_edad_01, g01_01, g01_02, g01_03, g01_04, g01_05,c18_01,c18_12, c18_02, c18_03, c18_09, c18_10, c18_13)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#limpieza casos perdidos, inversion #</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#limpieza casos perdidos, inversion #</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>varelsoc19[varelsoc19 <span class="sc">==</span> <span class="sc">-</span><span class="dv">888</span> <span class="sc">|</span> varelsoc19 <span class="sc">==</span> <span class="sc">-</span><span class="dv">999</span>] <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -200,12 +205,12 @@ The following objects are masked from 'package:ggplot2':
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">c18_02_inv =</span> <span class="dv">6</span> <span class="sc">-</span> c18_02,</span>
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">c18_03_inv =</span> <span class="dv">6</span> <span class="sc">-</span> c18_03</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <section id="section" class="level3">
 <h3 class="anchored" data-anchor-id="section"></h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># revision de datos con alfa de cronbach #</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># revision de datos con alfa de cronbach #</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(psych)</span>
@@ -214,71 +219,72 @@ The following objects are masked from 'package:ggplot2':
 <span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>alpha_sexismo_b <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">alpha</span>(varelsoc19 <span class="sc">%&gt;%</span> </span>
 <span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(g01_01, g01_02)) <span class="co">#sexismo benevolente</span></span>
 <span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>alpha_sexismo_b<span class="sc">$</span>total</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>alpha_sexismo_b<span class="sc">$</span>total</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> raw_alpha std.alpha  G6(smc) average_r    S/N        ase     mean        sd
  0.5204052 0.5293674 0.359959  0.359959 1.1248 0.01601793 3.881148 0.7523017
  median_r
  0.359959</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>alpha_sexismo_h <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">alpha</span>(varelsoc19 <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>alpha_sexismo_h <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">alpha</span>(varelsoc19 <span class="sc">%&gt;%</span> </span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(g01_03, g01_04, g01_05)) <span class="co">#sexismo hostil</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>alpha_sexismo_h<span class="sc">$</span>total</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>alpha_sexismo_h<span class="sc">$</span>total</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> raw_alpha std.alpha   G6(smc) average_r      S/N        ase     mean        sd
  0.5301443   0.53638 0.4613074 0.2783151 1.156939 0.01408046 3.025923 0.7100954
   median_r
  0.2102199</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Las subescalas de sexismo benevolente (α = .52) y hostil (α = .53) presentaron una consistencia interna moderada, lo que puede atribuirse al reducido número de ítems y a la heterogeneidad conceptual de las afirmaciones incluidas.</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Las subescalas de sexismo benevolente (α = .52) y hostil (α = .53) presentaron una consistencia interna moderada, lo que puede atribuirse al reducido número de ítems y a la heterogeneidad conceptual de las afirmaciones incluidas.</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>alpha_sdod <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">alpha</span>(varelsoc19 <span class="sc">%&gt;%</span> </span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(c18_01, c18_12)) <span class="co"># SDO-D</span></span>
 <span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>alpha_sdod<span class="sc">$</span>total</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>alpha_sdod<span class="sc">$</span>total</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> raw_alpha std.alpha   G6(smc) average_r      S/N        ase     mean        sd
  0.6084498 0.6105598 0.4394286 0.4394286 1.567788 0.01330399 2.590347 0.9263842
   median_r
  0.4394286</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>alpha_sdoe <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">alpha</span>(varelsoc19 <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>alpha_sdoe <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">alpha</span>(varelsoc19 <span class="sc">%&gt;%</span> </span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(c18_02_inv, c18_03_inv)) <span class="co">#SDO-E</span></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>alpha_sdoe<span class="sc">$</span>total</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>alpha_sdoe<span class="sc">$</span>total</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> raw_alpha std.alpha   G6(smc) average_r      S/N         ase     mean
  0.7415709 0.7433566 0.5915415 0.5915415 2.896458 0.008828845 1.747875
         sd  median_r
  0.5817791 0.5915415</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>alpha_meritocracia <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">alpha</span>(varelsoc19 <span class="sc">%&gt;%</span> </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>alpha_meritocracia <span class="ot">&lt;-</span> psych<span class="sc">::</span><span class="fu">alpha</span>(varelsoc19 <span class="sc">%&gt;%</span> </span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(c18_09, c18_10 )) <span class="co">#meritocracia</span></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>alpha_meritocracia<span class="sc">$</span>total </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>alpha_meritocracia<span class="sc">$</span>total </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> raw_alpha std.alpha  G6(smc) average_r      S/N         ase     mean        sd
    0.82057 0.8204244 0.695525  0.695525 4.568684 0.006138202 2.625551 0.9492215
  median_r
  0.695525</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#El ítem c18_13 fue excluido del índice de meritocracia debido a su correlación negativa con el resto de la escala, evidenciada mediante el alfa de Cronbach.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#El ítem c18_13 fue excluido del índice de meritocracia debido a su correlación negativa con el resto de la escala, evidenciada mediante el alfa de Cronbach.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="sexismo-alpha-de-crombach" class="level3">
-<h3 class="anchored" data-anchor-id="sexismo-alpha-de-crombach"><strong>sexismo: alpha de crombach</strong></h3>
-<p>En sexismo benevolente (α = .52) y hostil (α = .53) presentaron una consistencia interna moderada, lo que puede atribuirse al reducido número de ítems y a la heterogeneidad conceptual de las afirmaciones incluidas.esto puede indicar una asociación positiva, lo que sugiere que ambos ítems capturan aspectos relacionados del constructo. En este sentido, esto sugiere una asociación moderada entre ellos, indicando que ambos capturan aspectos relacionados del constructo. Por tanto, el índice se considera adecuado para fines exploratorios.</p>
-</section>
-<section id="alpha-de-crombach-dominancia-social" class="level3">
-<h3 class="anchored" data-anchor-id="alpha-de-crombach-dominancia-social"><strong>Alpha de crombach: dominancia social</strong></h3>
+<section id="alpha-de-crombach" class="level3">
+<h3 class="anchored" data-anchor-id="alpha-de-crombach"><strong>Alpha de Crombach</strong></h3>
+<p><strong>Sexismo</strong></p>
+<p>En sexismo benevolente (α = .52) y hostil (α = .53) se observa una consistencia interna moderada, lo que puede atribuirse al reducido número de ítems y a la heterogeneidad conceptual de las afirmaciones incluidas. Si bien estos valores no alcanzan niveles óptimos, los índices presentan una coherencia interna suficiente para captar el constructo en el contexto de este estudio. Por tanto, se consideran pertinentes para los fines de esta investigación, especialmente en su carácter exploratorio</p>
+<p><strong>Dominación Social</strong></p>
 <p>La escala de dominación grupal presenta una consistencia interna aceptable (α = 0.61), situándose por sobre los valores observados en las escalas de sexismo. Este resultado indica una mayor coherencia entre los ítems que componen el índice, que evidencia que ambos ítems capturan de manera consistente la orientación hacia la jerarquía entre grupos.</p>
+<p><strong>Oposición a la igualdad</strong></p>
 <p>La escala de oposición a la igualdad presenta una alta consistencia interna (α = 0.74), superando el umbral recomendado de 0.70. Este resultado indica que los ítems que componen el índice están fuertemente correlacionados entre sí y capturan de manera coherente el constructo teórico.</p>
+<p><strong>Meritocracia</strong></p>
 <p>La escala de creencias meritocráticas igual&nbsp; presenta una alta consistencia interna (α = 0.82), superando ampliamente el umbral recomendado de 0.70. Este resultado indica que los ítems que componen el índice están fuertemente correlacionados y capturan de manera coherente el constructo de meritocracia. La correlación promedio entre los ítems (r = 0.70) evidencia una asociación muy alta, lo que sugiere que ambas variables reflejan de forma consistente la creencia de que el éxito social depende de factores individuales como el esfuerzo y las habilidades.&nbsp;</p>
 <p>En conjunto, los resultados muestran que las escalas asociadas a orientaciones ideológicas (meritocracia y oposición a la igualdad) presentan mayores niveles de consistencia interna que las escalas de sexismo, lo que puede atribuirse a una mayor homogeneidad conceptual en sus ítems.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">#creacion indices continuos (promedios) #</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">#creacion indices continuos (promedios) #</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>varelsoc19 <span class="ot">&lt;-</span> varelsoc19 <span class="sc">%&gt;%</span></span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
@@ -309,7 +315,7 @@ The following objects are masked from 'package:ggplot2':
 <span id="cb18-29"><a href="#cb18-29" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb18-30"><a href="#cb18-30" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-31"><a href="#cb18-31" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(varelsoc19 <span class="sc">%&gt;%</span> </span>
-<span id="cb18-32"><a href="#cb18-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(sexismo_b, sexismo_h, sdo_d, sdo_e, meritocracia))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb18-32"><a href="#cb18-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(sexismo_b, sexismo_h, sdo_d, sdo_e, meritocracia))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   sexismo_b       sexismo_h         sdo_d          sdo_e        meritocracia  
  Min.   :1.000   Min.   :1.000   Min.   :1.00   Min.   :1.000   Min.   :1.000  
@@ -329,16 +335,16 @@ The following objects are masked from 'package:ggplot2':
 <p>En relación con la dominación grupal, se observan niveles relativamente bajos (M = 2.59; Md = 2.50), lo que indica una tendencia a rechazar las afirmaciones que justifican jerarquías explícitas entre grupos sociales.</p>
 <p>&nbsp;La oposición a la igualdad presenta niveles bajos (M = 1.75; Md = 2.00), evidenciando una alta adhesión a principios igualitarios en la muestra.</p>
 <p>Finalmente, las creencias meritocráticas muestran niveles intermedios (M = 2.63; Md = 2.50), lo que refleja una adhesión moderada a la idea de que el éxito social depende del esfuerzo y las habilidades individuales.</p>
-<p>En conjunto, estos resultados sugieren la existencia de una tensión en las actitudes de la muestra: mientras se observa un bajo apoyo a formas explícitas de desigualdad y una alta adhesión a principios igualitarios, persisten niveles relativamente altos de sexismo benevolente y una adhesión moderada a creencias meritocráticas. Esto indica que la legitimación de la desigualdad podría operar de manera más sutil, a través de creencias culturalmente aceptadas y no abiertamente conflictivas.</p>
+<p>En conjunto, los resultados evidencian una tensión central en las actitudes de la muestra: mientras se observa un bajo apoyo a formas explícitas de desigualdad y una alta adhesión a principios igualitarios, persisten niveles elevados de sexismo benevolente y una adhesión moderada a creencias meritocráticas. Esta aparente contradicción sugiere que la legitimación de la desigualdad de género no se articula necesariamente a través del rechazo abierto a la igualdad, sino mediante formas sutiles, culturalmente aceptadas y difíciles de identificar como prejuicio, que operan de manera indirecta en la reproducción de jerarquías sociales</p>
 </section>
 <section id="análisis-de-estadísticos" class="level2">
 <h2 class="anchored" data-anchor-id="análisis-de-estadísticos"><strong>Análisis de estadísticos</strong></h2>
 <section id="h1-los-niveles-de-sexismo-tanto-benevolente-como-hostil-tenderán-a-ser-más-elevados-en-hombres-y-en-personas-de-mayor-edad." class="level3">
 <h3 class="anchored" data-anchor-id="h1-los-niveles-de-sexismo-tanto-benevolente-como-hostil-tenderán-a-ser-más-elevados-en-hombres-y-en-personas-de-mayor-edad."><strong>H1: Los niveles de sexismo, tanto benevolente como hostil, tenderán a ser más elevados en hombres y en personas de mayor edad.</strong></h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#para el genero t test, comparar si el sexismo benevolente es difenrente entre hombres y mujeres</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#para el genero t test, comparar si el sexismo benevolente es difenrente entre hombres y mujeres</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(sexismo_b <span class="sc">~</span> r13_sexo_01, <span class="at">data =</span> varelsoc19)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(sexismo_b <span class="sc">~</span> r13_sexo_01, <span class="at">data =</span> varelsoc19)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Welch Two Sample t-test
@@ -352,7 +358,7 @@ sample estimates:
 mean in group 1 mean in group 2 
        3.887692        3.876555 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(sexismo_h <span class="sc">~</span> r13_sexo_01, <span class="at">data =</span> varelsoc19)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(sexismo_h <span class="sc">~</span> r13_sexo_01, <span class="at">data =</span> varelsoc19)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Welch Two Sample t-test
@@ -366,9 +372,9 @@ sample estimates:
 mean in group 1 mean in group 2 
        3.034284        3.020574 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co">#correlacion de pearsons para edad continua</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co">#correlacion de pearsons para edad continua</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_b, varelsoc19<span class="sc">$</span>r13_edad_01)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_b, varelsoc19<span class="sc">$</span>r13_edad_01)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Pearson's product-moment correlation
@@ -382,7 +388,7 @@ sample estimates:
        cor 
 0.08171731 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_h, varelsoc19<span class="sc">$</span>r13_edad_01)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_h, varelsoc19<span class="sc">$</span>r13_edad_01)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Pearson's product-moment correlation
@@ -396,7 +402,7 @@ sample estimates:
        cor 
 0.05811602 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># podriamos usar anova para medir edad por grupos</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># podriamos usar anova para medir edad por grupos</span></span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>varelsoc19 <span class="ot">&lt;-</span> varelsoc19 <span class="sc">%&gt;%</span></span>
 <span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
@@ -408,7 +414,7 @@ sample estimates:
 <span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a>  )</span>
 <span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>anova_b <span class="ot">&lt;-</span> <span class="fu">aov</span>(sexismo_b <span class="sc">~</span> edad_grupo, <span class="at">data =</span> varelsoc19)</span>
-<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(anova_b)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(anova_b)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>              Df Sum Sq Mean Sq F value   Pr(&gt;F)    
 edad_grupo     2   16.2   8.102   14.36 6.17e-07 ***
@@ -417,8 +423,8 @@ Residuals   3363 1897.6   0.564
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 51 observations deleted due to missingness</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>anova_h <span class="ot">&lt;-</span> <span class="fu">aov</span>(sexismo_h <span class="sc">~</span> edad_grupo, <span class="at">data =</span> varelsoc19)</span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(anova_h)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>anova_h <span class="ot">&lt;-</span> <span class="fu">aov</span>(sexismo_h <span class="sc">~</span> edad_grupo, <span class="at">data =</span> varelsoc19)</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(anova_h)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>              Df Sum Sq Mean Sq F value  Pr(&gt;F)   
 edad_grupo     2    5.4  2.7241   5.418 0.00448 **
@@ -427,10 +433,10 @@ Residuals   3361 1690.0  0.5028
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 53 observations deleted due to missingness</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co">#grafico anova</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co">#grafico anova</span></span>
 <span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(varelsoc19, <span class="fu">aes</span>(<span class="at">x =</span> edad_grupo, <span class="at">y =</span> sexismo_b)) <span class="sc">+</span></span>
-<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: Removed 1 row containing non-finite outside the scale range
 (`stat_boxplot()`).</code></pre>
@@ -442,8 +448,8 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 </figure>
 </div>
 </div>
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(varelsoc19, <span class="fu">aes</span>(<span class="at">x =</span> edad_grupo, <span class="at">y =</span> sexismo_h)) <span class="sc">+</span></span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(varelsoc19, <span class="fu">aes</span>(<span class="at">x =</span> edad_grupo, <span class="at">y =</span> sexismo_h)) <span class="sc">+</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: Removed 3 rows containing non-finite outside the scale range
 (`stat_boxplot()`).</code></pre>
@@ -459,18 +465,18 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 <p>Para evaluar la H1, se realizaron pruebas de muestras independientes para comparar los niveles de sexismo benevolente y hostil según género. Asimismo, se calcularon correlaciones de Pearson para examinar la relación entre edad y ambas dimensiones del sexismo. finalmente se calculó ANOVA, separando la edad en grupos, analizando los índices de sexismo.</p>
 <p>Partiendo por el sexismo benevolente, los resultados indican que no existen diferencias estadísticamente significativas entre hombres y mujeres (t = 0.42, p = 0.67).</p>
 <p>En términos descriptivos, ambos grupos presentan niveles muy similares de sexismo benevolente (hombres = 3.89; mujeres = 3.88), lo que sugiere que este tipo de actitudes se distribuye de manera homogénea en la población.</p>
-<p>pasando al sexismo hostil, la historia se repite. Ambos grupos presentan niveles muy similares de sexismo hostil (hombres = 3.03; mujeres = 3.02), lo que sugiere una distribución homogénea de estas actitudes en la muestra.</p>
+<p>En el caso del sexismo hostil, la historia se repite. Ambos grupos presentan niveles muy similares de sexismo hostil (hombres = 3.03; mujeres = 3.02), lo que sugiere una distribución homogénea de estas actitudes en la muestra.</p>
 <p>No se encuentra evidencia empírica que respalde la hipótesis de que los hombres presentan mayores niveles de sexismo hostil que las mujeres.</p>
 <p>pasando a los resultados de correlación, Con el fin de analizar la relación entre edad y sexismo benevolente, se estimó una correlación de Pearson. Los resultados muestran una asociación positiva y estadísticamente significativa (r = 0.08, p &lt; 0.001), lo que indica que a mayor edad, tienden a observarse niveles ligeramente más altos de sexismo benevolente.</p>
 <p>No obstante, la magnitud de esta correlación es baja, lo que sugiere que, si bien la relación si existe, su intensidad es débil.</p>
-<p>ahora pasando a los resultados de Anova, en el caso del sexismo benevolente, Los resultados muestran diferencias estadísticamente significativas entre los grupos etarios (F(2, 3363) = 14.36, p &lt; 0.001), lo que indica que los niveles de sexismo varían en función de la edad. En cambio, a pesar de que con el sexismo hostil los resultados igual indican diferencias entre los grupos (F(2, 3361) = 5.42, p &lt; 0.01), en comparación con el sexismo benevolente, la magnitud de estas diferencias es menor.</p>
-<p>En conjunto, no se observan diferencias grandes de los resultados según género. Sin embargo, tanto los análisis de correlación como los análisis de varianza evidencian que la edad se asocia significativamente con ambas dimensiones del sexismo. En particular, se observan diferencias entre grupos etarios y una relación positiva entre edad y sexismo, aunque de magnitud baja. Estos hallazgos respaldan parcialmente la hipótesis planteada, confirmando la existencia de variaciones según edad, pero no según género.</p>
+<p>Ahora, pasando a los resultados de ANOVA, en el caso del sexismo benevolente, se observan diferencias estadísticamente significativas entre los grupos etarios (F(2, 3363) = 14.36, p &lt; 0.001), lo que indica que los niveles de sexismo varían en función de la edad. En términos de dirección, se observa que los niveles de sexismo benevolente tienden a ser mayores en los grupos de mayor edad en comparación con los grupos más jóvenes. En cambio, en el caso del sexismo hostil, si bien también se identifican diferencias significativas entre los grupos (F(2, 3361) = 5.42, p &lt; 0.01), la magnitud de estas diferencias es menor. No obstante, se mantiene el mismo patrón general, observándose niveles ligeramente más altos de sexismo hostil en los grupos de mayor edad.</p>
+<p>En conjunto, no se observan diferencias significativas en los niveles de sexismo según género. En contraste, tanto los análisis de correlación como los de varianza indican que la edad se asocia de manera significativa con ambas dimensiones del sexismo. En particular, se identifican diferencias entre grupos etarios y una relación positiva entre edad y sexismo, aunque de magnitud baja. Estos hallazgos respaldan parcialmente la hipótesis planteada, confirmando la existencia de variaciones según edad, pero no según género.</p>
 </section>
 <section id="h2-el-sexismo-tanto-benevolente-como-hostil-se-asociará-positivamente-con-la-dominación-grupal-y-las-creencias-meritocráticas-y-negativamente-con-el-igualitarismo." class="level3">
 <h3 class="anchored" data-anchor-id="h2-el-sexismo-tanto-benevolente-como-hostil-se-asociará-positivamente-con-la-dominación-grupal-y-las-creencias-meritocráticas-y-negativamente-con-el-igualitarismo.">H2: El sexismo, tanto benevolente como hostil, se asociará positivamente con la dominación grupal y las creencias meritocráticas, y negativamente con el igualitarismo.</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># benevolente</span></span>
-<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_b, varelsoc19<span class="sc">$</span>sdo_d)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># benevolente</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_b, varelsoc19<span class="sc">$</span>sdo_d)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Pearson's product-moment correlation
@@ -484,7 +490,7 @@ sample estimates:
       cor 
 0.1570761 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_b, varelsoc19<span class="sc">$</span>meritocracia)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_b, varelsoc19<span class="sc">$</span>meritocracia)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Pearson's product-moment correlation
@@ -498,7 +504,7 @@ sample estimates:
        cor 
 0.09601002 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_b, varelsoc19<span class="sc">$</span>sdo_e)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_b, varelsoc19<span class="sc">$</span>sdo_e)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Pearson's product-moment correlation
@@ -512,8 +518,8 @@ sample estimates:
         cor 
 -0.02565917 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># hostil</span></span>
-<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_h, varelsoc19<span class="sc">$</span>sdo_d)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="co"># hostil</span></span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_h, varelsoc19<span class="sc">$</span>sdo_d)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Pearson's product-moment correlation
@@ -527,7 +533,7 @@ sample estimates:
       cor 
 0.3103837 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_h, varelsoc19<span class="sc">$</span>meritocracia)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_h, varelsoc19<span class="sc">$</span>meritocracia)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Pearson's product-moment correlation
@@ -541,7 +547,7 @@ sample estimates:
       cor 
 0.1868537 </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_h, varelsoc19<span class="sc">$</span>sdo_e)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(varelsoc19<span class="sc">$</span>sexismo_h, varelsoc19<span class="sc">$</span>sdo_e)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
     Pearson's product-moment correlation
@@ -556,21 +562,22 @@ sample estimates:
 0.1467818 </code></pre>
 </div>
 </div>
-<p>Para la hipótesis 2, se realizaron correlaciones de pearsons para analizar cómo se relacionan las variables con los diferentes tipos de sexismo. Partiendo por el sexismo benevolente, su relación con la variable de dominación grupal (sdo-d) nos indica una relación positiva entre sexismo benevolente y apoyo a dominación grupal(r = 0.157, p &lt; 0.001). En el caso de la meritocracia, esto se repite, contando con una dirección positiva al igual que el anterior. Esto sugiere que el sexismo benevolente no solo se vincula con actitudes explícitas de jerarquía social, sino también con creencias más sutiles que legitiman la desigualdad, como la meritocracia. Finalmente, no se observó una correlación significativa entre el sexismo benevolente y la oposición a la igualdad (r = -0.026, p = 0.134), lo que indica que no existe evidencia de una asociación entre ambas variables en la muestra analizada.</p>
-<p>Con respecto al sexismo hostil, Se observó una correlación positiva y estadísticamente significativa entre el sexismo hostil y la dominación grupal (r = 0.310, p &lt; 0.001), lo que indica que mayores niveles de actitudes hostiles hacia las mujeres se asocian con un mayor apoyo a la jerarquía entre grupos. Esto, al igual que con sexismo benevolente, se repite con meritocracia,lo que indica que mayores niveles de actitudes hostiles hacia las mujeres se asocian con una mayor adhesión a explicaciones meritocráticas de las diferencias sociales. Finalmente, a diferencia con lo ocurrido con el sexismo benevolente, acá la relación entre sexismo hostil y oposición a la igualdad es positiva, lo que nos dice que las personas que más apoyan la desigualdad social tienden a mostrar más sexismo hostil, pero la relación es débil.</p>
+<p>Para la hipótesis 2, se realizaron correlaciones de pearsons para analizar cómo se relacionan las variables con los diferentes tipos de sexismo. Partiendo por el sexismo benevolente, su relación con la variable de dominación grupal (sdo-d) nos indica una relación positiva entre sexismo benevolente y apoyo a dominación grupal(r = 0.157, p &lt; 0.001). En el caso de la meritocracia, esto se repite, contando con una dirección positiva al igual que el anterior. Esto sugiere que el sexismo benevolente no solo se vincula con actitudes explícitas de jerarquía social, sino también con creencias más sutiles que legitiman la desigualdad, como la meritocracia. Finalmente, no se observa una correlación estadísticamente significativa entre el sexismo benevolente y la oposición a la igualdad (r = -0.026, p = 0.134), lo que indica que no existe evidencia de una asociación entre ambas variables en la muestra analizada.</p>
+<p>Con respecto al sexismo hostil, se observa una correlación positiva y estadísticamente significativa con la dominación grupal (r = 0.310, p &lt; 0.001), lo que indica que mayores niveles de actitudes hostiles hacia las mujeres se asocian con un mayor apoyo a la jerarquía entre grupos. Este patrón se replica en su relación con la meritocracia, aunque con menor intensidad, sugiriendo que quienes presentan mayores niveles de sexismo hostil tienden también a adherir a explicaciones meritocráticas de las diferencias sociales.</p>
+<p>Finalmente, se observa una correlación positiva y estadísticamente significativa entre el sexismo hostil y la oposición a la igualdad (r = 0.147, p &lt; 0.001), lo que indica que mayores niveles de sexismo hostil se asocian con un mayor rechazo a principios igualitarios. Este resultado es contrario a lo esperado en la hipótesis planteada.</p>
 </section>
 </section>
 <section id="modelos-de-regresión" class="level2">
 <h2 class="anchored" data-anchor-id="modelos-de-regresión">modelos de regresión:</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co">#benevolente</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co">#benevolente</span></span>
 <span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>modelo_b <span class="ot">&lt;-</span> <span class="fu">lm</span>(</span>
 <span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>  sexismo_b <span class="sc">~</span> r13_sexo_01 <span class="sc">+</span> r13_edad_01 <span class="sc">+</span> sdo_d <span class="sc">+</span> sdo_e <span class="sc">+</span> meritocracia,</span>
 <span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> varelsoc19</span>
 <span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb48-8"><a href="#cb48-8" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(modelo_b)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb48-8"><a href="#cb48-8" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(modelo_b)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -597,14 +604,14 @@ Residual standard error: 0.74 on 3332 degrees of freedom
 Multiple R-squared:  0.03852,   Adjusted R-squared:  0.03708 
 F-statistic:  26.7 on 5 and 3332 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co">#hostil: </span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co">#hostil: </span></span>
 <span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>modelo_h <span class="ot">&lt;-</span> <span class="fu">lm</span>(</span>
 <span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>  sexismo_h <span class="sc">~</span> r13_sexo_01 <span class="sc">+</span> r13_edad_01 <span class="sc">+</span> sdo_d <span class="sc">+</span> sdo_e <span class="sc">+</span> meritocracia,</span>
 <span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> varelsoc19</span>
 <span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb50-8"><a href="#cb50-8" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(modelo_h)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb50-8"><a href="#cb50-8" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(modelo_h)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
@@ -632,248 +639,259 @@ Multiple R-squared:  0.1174,    Adjusted R-squared:  0.1161
 F-statistic: 88.63 on 5 and 3332 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
 </div>
-<p>al aplicar el modelo de regresión lineal a el sexismo benevolente, descubrimos que el modelo explica solo un 3.85% de la variabilidad del sexismo benevolente ( R2: 0.0385), lo que nos dice que el fenómeno es mucho más complejo de lo que pensábamos inicialmente. los principales predictores positivos de esto&nbsp; siendo edad (débil pero significativo), meritocracia (moderado) y principalmente dominancia social, siendo el predictor positivo más fuerte. sexo no es revelante en este caso, y nuestro unico predictor negativo seria oposicion a la igualdad (bajo pero significativo).</p>
-<p>Al aplicar el modelo al sexismo hostil, en cambio, nos da un R2 de 0.117, lo que significa que el modelo explica un 11.7% de la variabilidad del sexismo hostil, que si bien sigue siendo bajo,&nbsp; es más alto que el sexismo benevolente. Al igual que la vez anterior, el predictor de género no es relevante acá y la edad sigue siendo un predictor positivo pero más bajo que en sexismo benevolente. meritocracia y oposición a la igualdad son los 2 positivos, y el predictor más fuerte positivo es dominancia social, igual que en sexismo benevolente</p>
-<p>Estos resultados nos dicen que el sexismo hostil se asocia de manera consistente con orientaciones ideológicas jerárquicas y anti igualitarias, mientras que el sexismo benevolente presenta una estructura más ambivalente, donde distintos componentes de la dominancia social se relacionan en direcciones opuestas. El sexismo hostil y benevolente son 2 tipos muy diferentes de sexismo, que funcionan con lógicas distintas, tal como vimos en los distintos resultados.</p>
+<p>Al aplicar el modelo de regresión lineal para el sexismo benevolente, se observa que el modelo explica una proporción reducida de la varianza (R² = 0.0385), lo que indica que se trata de un fenómeno complejo, no capturado completamente por las variables incluidas. En términos de predictores, la edad presenta un efecto positivo débil pero estadísticamente significativo, mientras que la meritocracia muestra una asociación positiva de mayor magnitud. La dominación social emerge como el predictor positivo más fuerte del modelo, evidenciando su relevancia en la explicación del sexismo benevolente. Por su parte, el sexo no resulta un predictor significativo. Finalmente, la oposición a la igualdad se asocia de manera negativa con el sexismo benevolente, aunque con una magnitud baja, pero estadísticamente significativa.</p>
+<p>Al aplicar el modelo de regresión al sexismo hostil, se obtiene un R² = 0.117, lo que indica que el modelo explica un 11.7% de la variabilidad. Si bien este valor sigue siendo bajo, es considerablemente mayor que el observado en el sexismo benevolente, lo que sugiere una mejor capacidad explicativa para esta dimensión. En términos de predictores, el sexo no resulta significativo, replicando el patrón anterior. La edad mantiene una asociación positiva, aunque de menor magnitud que en el modelo de sexismo benevolente. Por su parte, la meritocracia y la oposición a la igualdad se asocian positivamente con el sexismo hostil, mientras que la dominación social emerge nuevamente como el predictor positivo más fuerte, confirmando su papel central en la explicación de actitudes que legitiman la desigualdad</p>
+<p>Estos resultados indican que el sexismo hostil se asocia de manera consistente con orientaciones ideológicas jerárquicas y antiigualitarias, evidenciando una relación más directa con la legitimación de la desigualdad. En contraste, el sexismo benevolente presenta una estructura más ambivalente, en la que distintos componentes de la dominancia social se vinculan en direcciones divergentes, lo que sugiere un funcionamiento más complejo y menos lineal. En este sentido, ambas dimensiones del sexismo responden a lógicas distintas, tal como se observa en los resultados, confirmando que no constituyen expresiones equivalentes de un mismo fenómeno, sino formas diferenciadas de reproducción de las jerarquías de género</p>
 </section>
-<section id="conclucion" class="level2">
-<h2 class="anchored" data-anchor-id="conclucion">conclucion</h2>
+<section id="conclusión" class="level2">
+<h2 class="anchored" data-anchor-id="conclusión">Conclusión</h2>
+<p>La teoría de la dominancia social (SDO) permite interpretar estos resultados al situar el sexismo dentro de un marco más amplio de legitimación de jerarquías entre grupos. En este estudio, el sexismo hostil se alinea con mayor claridad con las orientaciones hacia la dominación grupal, lo que respalda la idea de que las actitudes abiertamente negativas cumplen un rol directo en la justificación de la desigualdad. En cambio, el sexismo benevolente presenta asociaciones más débiles e inconsistentes, lo que sugiere que su contribución a la reproducción del orden jerárquico opera de manera indirecta y culturalmente mediada. Así, los hallazgos son coherentes con la propuesta central de la SDO: la desigualdad no se sostiene únicamente mediante ideologías explícitas de dominación, sino también a través de creencias y actitudes que, aun siendo socialmente aceptadas, contribuyen a su mantenimiento.</p>
+<p>Estos resultados se interpretan considerando que el sexismo fue medido a partir del enfoque del Ambivalent Sexism Inventory (ASI) el cual conceptualiza el fenómeno como un constructo bidimensional que distingue entre sexismo hostil y benevolente. Este instrumento, basado en ítems tipo Likert y validado empíricamente en distintos contextos (Glick &amp; Fiske, 1996), permite captar tanto expresiones explícitas como formas más encubiertas de prejuicio, lo que resulta consistente con los hallazgos obtenidos.</p>
+<p>Por otra parte, no se observaron diferencias significativas según género, mientras que la edad mostró asociaciones positivas pero de baja magnitud, lo que sugiere una distribución relativamente homogénea de estas actitudes, con leves variaciones generacionales.</p>
+<p>En conjunto, los resultados evidencian una tensión entre la adhesión declarada a principios igualitarios y la persistencia de formas de prejuicio de género, especialmente en su dimensión benevolente. Desde la perspectiva de la teoría de la dominancia social (SDO), esto sugiere que la legitimación de la desigualdad no se sostiene únicamente a través de actitudes explícitas de dominación, sino también mediante creencias culturalmente aceptadas que contribuyen a reproducir jerarquías de forma indirecta. Dado el carácter exploratorio del estudio y las limitaciones en la consistencia interna de algunas escalas, estos hallazgos deben interpretarse como tendencias generales más que como conclusiones definitivas, constituyendo una base pertinente para futuras líneas de investigación sobre el sexismo como fenómeno multidimensional.</p>
 </section>
 </section>
 
 </main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
       }
+      return false;
     }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
       }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
       for (const childEl of codeEl.children) {
         if (isCodeAnnotation(childEl)) {
           childEl.remove();
         }
       }
       return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
     });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
     }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
-    };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
         }
-        return container.innerHTML
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -881,185 +899,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 </div> <!-- /content -->
 
 
